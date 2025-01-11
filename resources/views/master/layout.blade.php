@@ -72,7 +72,7 @@
                                                 <li><a class="dropdown-item" href="{{ route('create-invoice') }}">New Invoice</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="">Medical</a></li>
+                                        <li><a href="{{ route('medical') }}">Medical</a></li>
                                         <li><a href="/doctor">Doctor</a></li>
                                         <li><a href="{{ route('pharmacy') }}">Pharmacy</a></li>
 
