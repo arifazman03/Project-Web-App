@@ -14,6 +14,7 @@ class AppointmentController extends Controller
 }
 public function create()
     {
+        $appointment = Appointment::all();
         return view('add-appointment');
     }
 
