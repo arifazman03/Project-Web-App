@@ -304,7 +304,7 @@
         <form id="invoice-form" action="{{ route('invoices.store') }}" method="POST">
             @csrf
             <div class="row">
-                <!-- Bill Date, Delivery Date, etc. -->
+               
                 <div class="col-md-6 mb-3">
                     <div class="form-group">
                         <label for="bill_date" class="form-label">Bill Date</label>

@@ -5,7 +5,6 @@
 <div class="container">
     <h2>Edit Invoice</h2>
 
-    {{-- Display Validation Errors --}}
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
