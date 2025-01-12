@@ -61,7 +61,7 @@
                                         {{-- <li><a href="index.html">Home</a></li> --}}
                                         <li><a href="/" class="active">Home<br></a></li>
                                         <li><a href="">Patient</a></li>
-                                        <li><a href="">Appointment</a></li>
+                                        <li><a href="{{ route('appointment') }}">Appointment</a></li>
                                         {{-- <li><a href="{{ route('create-invoice') }}">Billing</a></li> --}}
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
