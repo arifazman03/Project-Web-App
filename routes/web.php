@@ -46,9 +46,9 @@ Route::put('/patients/{id}', [PatientController::class, 'update'])->name('patien
 Route::delete('/patients/{id}', [PatientController::class, 'destroy'])->name('patients.destroy');
 
 
-Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointment.index');
-Route::get('/appointments/create', [AppointmentController::class, 'create'])->name('appointment.create');
-Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointment.store');
-Route::get('/appointments/{id}/edit', [AppointmentController::class, 'edit'])->name('appointment.edit');
-Route::put('/appointments/{id}', [AppointmentController::class, 'update'])->name('appointment.update');
-Route::delete('/appointments/{id}', [AppointmentController::class, 'destroy'])->name('appointment.destroy');
+Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
+Route::get('/appointments/create', [AppointmentController::class, 'create'])->name('appointments.create');
+Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+Route::get('/appointments/{id}/edit', [AppointmentController::class, 'edit'])->name('appointments.edit');
+Route::put('/appointments/{id}', [AppointmentController::class, 'update'])->name('appointments.update');
+Route::delete('/appointments/{id}', [AppointmentController::class, 'destroy'])->name('appointments.destroy');
