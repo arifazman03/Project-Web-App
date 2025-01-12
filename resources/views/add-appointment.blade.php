@@ -5,7 +5,7 @@
          <h1 class="mb-4">Appointment</h1>
 
 
-    <a href="{{ route('appointments.create-appointment') }}" class="btn btn-primary mb-3">Add Appointment</a>
+    <a href="{{ route('appointments.create') }}" class="btn btn-primary mb-3">Add Appointment</a>
 
     <table class="table table-bordered">
         <thead class="thead-dark">

@@ -16,7 +16,7 @@ class AppointmentController extends Controller
 
 
 public function create(){
-    return view('appointments.create-appointment');
+    return view('create-appointment');
 }
 public function store(Request $request)
 {
