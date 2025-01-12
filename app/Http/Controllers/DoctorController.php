@@ -44,7 +44,7 @@ class DoctorController extends Controller
 
         Doctor::create($request->all());
 
-        return redirect()->route('doctor.index')->with('success', 'Doctor created successfully.');
+        return redirect()->route('doctor')->with('success', 'Doctor created successfully.');
     }
 
     /**
@@ -80,7 +80,7 @@ class DoctorController extends Controller
         $doctor = Doctor::findOrFail($id);
         $doctor->update($request->all());
 
-        return redirect()->route('doctor.index')->with('success', 'Doctor updated successfully');
+        return redirect()->route('doctor')->with('success', 'Doctor updated successfully');
     }
 
     /**
@@ -91,6 +91,6 @@ class DoctorController extends Controller
         $doctor = Doctor::findOrFail($id);
         $doctor->delete();
 
-        return redirect()->route('doctor.index')->with('success', 'Doctor deleted successfully');
+        return redirect()->route('doctor')->with('success', 'Doctor deleted successfully');
     }
 }
