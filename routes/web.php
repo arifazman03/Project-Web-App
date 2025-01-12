@@ -44,3 +44,11 @@ Route::post('/patients', [PatientController::class, 'store'])->name('patients.st
 Route::get('/patients/{id}/edit', [PatientController::class, 'edit'])->name('patients.edit');
 Route::put('/patients/{id}', [PatientController::class, 'update'])->name('patients.update');
 Route::delete('/patients/{id}', [PatientController::class, 'destroy'])->name('patients.destroy');
+
+// Patient Routes
+Route::get('/appointment', [PatientController::class, 'index'])->name('appointment.index');
+Route::get('/appointment/create', [PatientController::class, 'create'])->name('appointment.create');
+Route::post('/appointment', [PatientController::class, 'store'])->name('appointment.store');
+Route::get('/appointment/{id}/edit', [PatientController::class, 'edit'])->name('appointment.edit');
+Route::put('/appointment/{id}', [PatientController::class, 'update'])->name('appointment.update');
+Route::delete('/appointment/{id}', [PatientController::class, 'destroy'])->name('appointment.destroy');
