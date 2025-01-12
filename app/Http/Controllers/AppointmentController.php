@@ -14,7 +14,7 @@ class AppointmentController extends Controller
         ->orderBy('updated_at', 'asc')
         ->get();
 
-        return view('appointment', ['appointment'=>$appointment]);
+        return view('appointment', ['appointments'=>$appointment]);
     }
 
     /**
