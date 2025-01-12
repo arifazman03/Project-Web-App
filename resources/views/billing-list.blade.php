@@ -1,5 +1,28 @@
 @extends('master.layout')
 @section('content')
+
+<style>
+.button-container {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Optional, add space above the button */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(3, 126, 249); /* Blue color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: rgb(3, 126, 249); /* Blue */
+}
+
+</style>
 <!DOCTYPE html>
 <div class="container">
     <h1>Billing List</h1>
@@ -20,47 +43,7 @@
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody>
-            {{-- @foreach($invoices as $invoice)
-                <tr>
-                    <td>{{ $loop->iteration }}</td>
-                    <td>{{ $invoice->invoice_id }}</td>
-                    <td>{{ $invoice->bill_date }}</td> <!-- Corrected from 'date' -->
-                    <td>{{ $invoice->patient_name }}</td> <!-- Corrected from 'patient' -->
-                    <td>MYR {{ number_format($invoice->total_amount, 2) }}</td>
-                    <td>
-                        <span class="{{ $invoice->payment_status === 'PAID' ? 'text-success' : 'text-danger' }}">
-                            {{ $invoice->payment_status }}
-                        </span>
-                    </td>
-                    <td>
-                        <a href="{{ route('invoice.show', $invoice->id) }}" class="text-info" title="View Invoice">👁️</a>
-                        <a href="{{ route('invoice.edit', $invoice->id) }}" class="text-info" title="Edit Invoice">✏️</a>
-                        <a href="#" class="text-danger delete-invoice" data-id="{{ $invoice->id }}" title="Delete Invoice">🗑️</a>
-                    </td>
-                </tr>
-            @endforeach --}}
-            {{-- @foreach($invoices as $invoice)
-        <tr>
-             <td>{{ $loop->iteration }}</td>
-              <td>{{ $invoice->invoice_id }}</td>
-              <td>{{ $invoice->bill_date }}</td>
-             <td>{{ $invoice->patient_name }}</td>
-             <td>MYR {{ number_format($invoice->total_amount, 2) }}</td>
-         <td>
-        <span class="{{ $invoice->payment_status === 'PAID' ? 'text-success' : 'text-danger' }}">
-            {{ $invoice->payment_status }}
-        </span>
-    </td>
-    <td>
-        <a href="{{ route('invoice.show', $invoice->id) }}" class="text-info" title="View Invoice">👁️</a>
-        <a href="{{ route('invoice.edit', $invoice->id) }}" class="text-info" title="Edit Invoice">✏️</a>
-        <a href="#" class="text-danger delete-invoice" data-id="{{ $invoice->id }}" title="Delete Invoice">🗑️</a>
-    </td>
-</tr>
-@endforeach --}}
-
-<tbody>
+    <tbody>
     @foreach($invoices as $invoice)
     @php
         $descriptions = json_decode($invoice->description, true);
@@ -86,13 +69,15 @@
             <a href="#" class="text-danger delete-invoice" data-id="{{ $invoice->id }}" title="Delete Invoice">🗑️</a>
         </td>
     </tr>
-@endforeach
-
-</tbody>
+    @endforeach
 
         </tbody>
     </table>
+
+   <div class="button-container">
     <a href="{{ route('create-invoice') }}" class="btn btn-primary">Add new billing</a>
+</div>
+
 </div>
 
 <script>
