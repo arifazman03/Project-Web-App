@@ -23,9 +23,14 @@ class Invoice extends Model
         'payment_status'
     ];
 
-    public function items()
+    public function invoiceItems()
     {
-        return $this->hasMany(InvoiceItem::class);
+        return $this->hasMany(InvoiceItem::class, 'invoice_id');
+    }
+
+    public function items() 
+    { 
+        return $this->hasMany(InvoiceItem::class); 
     }
 
 }

@@ -5,7 +5,6 @@
 <div class="container">
     <h2>Edit Invoice</h2>
 
-    {{-- Display Validation Errors --}}
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -19,7 +18,7 @@
     <form id="invoice-form" action="{{ route('invoice.update', $invoice->id) }}" method="POST">
         @csrf
         @method('PUT')
-
+        
         <div class="form-section">
             <div>
                 <label for="bill_date">Bill Date:</label>
