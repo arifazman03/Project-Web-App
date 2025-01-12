@@ -13,8 +13,13 @@ class AppointmentController extends Controller
     return view('add-appointment', compact('appointments'));
 }
 
-
-
+public function show($id)
+    {
+        // Add your logic here to show a specific appointment
+        // For example:
+        $appointment = Appointment::findOrFail($id);
+        return view('appointments.show', compact('appointment'));
+    }
 public function create(){
     return view('create-appointment');
 }

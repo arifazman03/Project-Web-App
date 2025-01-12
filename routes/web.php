@@ -59,3 +59,4 @@ Route::delete('/patients/{id}', [PatientController::class, 'destroy'])->name('pa
 Route::resource('/appointments', AppointmentController::class);
 Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
 Route::get('/appointments/create-appointment', [AppointmentController::class, 'create'])->name('appointments.create');
+Route::get('appointments/{appointment}', [AppointmentController::class, 'show']);
