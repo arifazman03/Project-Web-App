@@ -73,7 +73,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{ route('medical') }}">Medical</a></li>
-                                        <li><a href="/doctor">Doctor</a></li>
+                                        <li><a href="{{ route('doctor') }}">Doctor</a></li>
                                         <li><a href="{{ route('pharmacy') }}">Pharmacy</a></li>
 
                                     </ul>
