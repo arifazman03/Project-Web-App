@@ -38,13 +38,14 @@
     <table class="table table-bordered">
         <thead class="thead-dark">
             <tr>
-                <th>Appointment ID</th>
-                <th>Patient ID</th>
-                <th>Doctor ID</th>
-                <th>Appointment Date</th>
-                <th>Appointment Time</th>
-                <th>Actions</th>
+                <th scope ="col">Appointment ID</th>
+                <th scope ="col">Patient ID</th>
+                <th scope ="col">Doctor ID</th>
+                <th scope ="col">Appointment Date</th>
+                <th scope ="col">Appointment Time</th>
+                <th scope ="col">Actions</th>
             </tr>
+
         </thead>
                     <tbody>
                         @foreach($appointments as $appointment)
