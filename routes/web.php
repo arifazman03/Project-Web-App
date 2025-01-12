@@ -6,6 +6,7 @@ use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\DrugController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\AppointmentController;
 
 Route::get('/', function () {
     return view('home');
@@ -55,3 +56,5 @@ Route::delete('/patients/{id}', [PatientController::class, 'destroy'])->name('pa
 
 
 Route::resource('appointments', AppointmentController::class);
+Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
+Route::get('/appointments/create', [AppointmentController::class, 'create'])->name('appointments.create');
