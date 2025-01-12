@@ -10,11 +10,11 @@ class AppointmentController extends Controller
 {
     public function index()
     {
-        $appointment = DB::table('appointments')
+        $appointment = DB::table('appointment')
         ->orderBy('updated_at', 'asc')
         ->get();
 
-        return view('appointment', ['appointments'=>$appointment]);
+        return view('appointment', ['appointment'=>$appointment]);
     }
 
     /**
