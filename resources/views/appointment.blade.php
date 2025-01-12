@@ -17,7 +17,7 @@
             </div>
         </div>
         <!-- Hero End -->
-        <!--patient table -->
+
         <h1>Appointment List</h1>
 
         <!-- Add Appointment Button -->
