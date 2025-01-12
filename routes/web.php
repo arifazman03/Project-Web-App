@@ -5,6 +5,7 @@ use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\DrugController;
 use App\Http\Controllers\MedicalController;
+use App\Http\Controllers\PatientController;
 
 Route::get('/', function () {
     return view('home');
@@ -25,13 +26,22 @@ Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('doctor
 Route::put('/doctor/{id}', [DoctorController::class, 'update'])->name('doctor.update');
 Route::delete('/doctor/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy');
 
-Route::get('/pharmacy', [DrugController::class, 'index'])->name('pharmacy'); 
-Route::get('/pharmacy/add-drug', [DrugController::class, 'create'])->name('add-drug'); 
-Route::post('/pharmacy/store', [DrugController::class, 'store'])->name('store-drug'); 
-Route::get('/pharmacy/edit-drug/{id}', [DrugController::class, 'edit'])->name('edit-drug'); 
-Route::put('/pharmacy/update/{id}', [DrugController::class, 'update'])->name('update-drug'); 
-Route::delete('/pharmacy/delete/{id}', [DrugController::class, 'destroy'])->name('delete-drug'); 
+Route::get('/pharmacy', [DrugController::class, 'index'])->name('pharmacy');
+Route::get('/pharmacy/add-drug', [DrugController::class, 'create'])->name('add-drug');
+Route::post('/pharmacy/store', [DrugController::class, 'store'])->name('store-drug');
+Route::get('/pharmacy/edit-drug/{id}', [DrugController::class, 'edit'])->name('edit-drug');
+Route::put('/pharmacy/update/{id}', [DrugController::class, 'update'])->name('update-drug');
+Route::delete('/pharmacy/delete/{id}', [DrugController::class, 'destroy'])->name('delete-drug');
 
-Route::get('/medical', [MedicalController::class, 'index'])->name('medical'); 
+Route::get('/medical', [MedicalController::class, 'index'])->name('medical');
 Route::get('/view-medical', [MedicalController::class, 'view_more'])->name('medical.view_more');
 Route::get('/add-medical', [MedicalController::class, 'create'])->name('medical.create');
+
+// Patient Routes
+Route::get('/patients', [PatientController::class, 'index'])->name('patients.index');
+Route::get('/patients/create', [PatientController::class, 'create'])->name('patients.create');
+Route::post('/patients', [PatientController::class, 'store'])->name('patients.store');
+Route::get('/patients/{id}/edit', [PatientController::class, 'edit'])->name('patients.edit');
+Route::put('/patients/{id}', [PatientController::class, 'update'])->name('patients.update');
+Route::delete('/patients/{id}', [PatientController::class, 'destroy'])->name('patients.destroy');
+Route::get('/patients/search', [PatientController::class, 'search'])->name('patients.search');
