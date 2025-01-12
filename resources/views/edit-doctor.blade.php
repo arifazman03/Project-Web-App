@@ -23,12 +23,12 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
-                        <h2>Edit doctor details</h2>
+                        <h2>Fill in doctor details</h2>
                     </div>
                 </div>
             </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-                <form action="{{ route('doctor.update',$doctor->id) }}" method="post" role="form" enctype="multipart/form-data" style="font-size: 18px;>
+                <form action="{{ route('doctor.update',$doctor->id) }}" method="post" role="form" enctype="multipart/form-data" style="font-size: 18px;">
                     @csrf
                     @method('PUT')
 
@@ -75,9 +75,6 @@
                     </div>
                   </form>
               </div>
-
-
-
         </div>
     </div>
     <!-- Team End -->
