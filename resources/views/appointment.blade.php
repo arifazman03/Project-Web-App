@@ -21,7 +21,8 @@
         <h1>Appointment List</h1>
 
         <!-- Add Appointment Button -->
-        <a href="{{ route('appointment.create') }}" class="btn btn-primary mb-3">Add Appointment</a>
+
+        <a class="btn" href="{{ route('appointment.create') }}" role="button">Add Appointment</a>
 
         <table border="1" cellpadding="10" cellspacing="0">
             <thead>
