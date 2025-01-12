@@ -36,7 +36,7 @@
     <a href="{{ route('appointments.create') }}" class="btn btn-primary mb-3">Add Appointment</a>
 
     <table class="table ">
-        <thead class="thead-dark">
+        <thead class="table-gray">
             <tr>
                 <th scope ="col">Appointment ID</th>
                 <th scope ="col">Patient ID</th>
@@ -47,60 +47,6 @@
             </tr>
 
         </thead>
-                    <tbody>
-                        @foreach($appointments as $appointment)
-                <tr>
-                    <td>{{ $appointment->id }}</td>
-                    <td>{{ $appointment->patient_id }}</td>
-                    <td>{{ $appointment->doctor_id }}</td>
-                    <td>{{ $appointment->appointment_date }}</td>
-                    <td>{{ $appointment->appointment_time }}</td>
-                                <td>
-                                    <form action="{{ route('doctor.destroy',$doctor->id) }}" method="POST">
-                                        <a class="text-primary" href="{{ route('doctor.edit',$doctor->id) }}">✏️</a>
-                                        @csrf
-                                        @method('DELETE')
-
-                                        <a href="#" class="text-danger delete-doctor" data-id="{{ $doctor->id }}" title="Delete Doctor">🗑️</a>
-                                        <script>
-                                            document.addEventListener('DOMContentLoaded', function () {
-                                                document.querySelectorAll('.delete-doctor').forEach(function (element) {
-                                                    element.addEventListener('click', function (e) {
-                                                        e.preventDefault(); // Prevent default link behavior
-
-                                                        const doctorId = this.getAttribute('data-id'); // Get doctor ID from data-id attribute
-                                                        if (confirm('Are you sure you want to delete this doctor?')) {
-                                                            // Create a form dynamically
-                                                            const form = document.createElement('form');
-                                                            form.action = `/doctor/${doctorId}`; // Adjust this route as needed
-                                                            form.method = 'POST';
-                                                            form.style.display = 'none';
-
-                                                            // Add CSRF and method inputs
-                                                            const csrfInput = document.createElement('input');
-                                                            csrfInput.type = 'hidden';
-                                                            csrfInput.name = '_token';
-                                                            csrfInput.value = '{{ csrf_token() }}'; // Laravel CSRF token
-
-                                                            const methodInput = document.createElement('input');
-                                                            methodInput.type = 'hidden';
-                                                            methodInput.name = '_method';
-                                                            methodInput.value = 'DELETE';
-
-                                                            form.appendChild(csrfInput);
-                                                            form.appendChild(methodInput);
-                                                            document.body.appendChild(form); // Append form to the body
-                                                            form.submit(); // Submit the form
-                                                        }
-                                                    });
-                                                });
-                                            });
-                                        </script>
-                                    </form>
-                                </td>
-                            </tr>
-                        @endforeach
-                    </tbody>
                   </table>
             </div>
         </div>
