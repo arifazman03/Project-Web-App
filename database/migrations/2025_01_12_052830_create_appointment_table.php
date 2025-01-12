@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('appointment_id', 4);
             $table->string('patient_id', 30);
             $table->string('doctor_id', 20);
-            $table->string('appointment_date')->unique|date();
+            $table->string('appointment_date')->unique();
             $table->string('appointment_time', 30);
             $table->timestamps();
         });
