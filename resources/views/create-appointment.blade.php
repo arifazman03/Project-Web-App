@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div>
-                <h2>Fill in doctor details</h2>
+                <h2>Fill in appointment details</h2>
             </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
 
