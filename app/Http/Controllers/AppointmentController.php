@@ -10,7 +10,7 @@ class AppointmentController extends Controller
 {
     public function index()
     {
-        $appointment = DB::table('appointment')
+        $appointment = DB::table('appointments')
         ->orderBy('updated_at', 'asc')
         ->get();
 
