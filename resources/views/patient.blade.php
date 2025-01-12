@@ -20,34 +20,41 @@
         <!--patient table -->
         <h1>Patient List</h1>
 
-    <table border="1" cellpadding="10" cellspacing="0">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Date of Birth</th>
-                <th>Gender</th>
-                <th>Phone Number</th>
-                <th>Email</th>
-                <th>Address</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($patients as $patient)
+        <!-- Add Patient Button -->
+        <a href="{{ route('patients.create') }}" class="btn btn-primary mb-3">Add Patient</a>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
                 <tr>
-                    <td>{{ $patient->id }}</td>
-                    <td>{{ $patient->first_name }}</td>
-                    <td>{{ $patient->last_name }}</td>
-                    <td>{{ $patient->date_of_birth }}</td>
-                    <td>{{ $patient->gender }}</td>
-                    <td>{{ $patient->phone_number }}</td>
-                    <td>{{ $patient->email }}</td>
-                    <td>{{ $patient->address }}</td>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Actions</th>
                 </tr>
-            @endforeach
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach($patients as $patient)
+                    <tr>
+                        <td>{{ $patient->id }}</td>
+                        <td>{{ $patient->first_name }}</td>
+                        <td>{{ $patient->last_name }}</td>
+                        <td>{{ $patient->date_of_birth }}</td>
+                        <td>{{ $patient->gender }}</td>
+                        <td>{{ $patient->phone_number }}</td>
+                        <td>{{ $patient->email }}</td>
+                        <td>{{ $patient->address }}</td>
+                        <td>
+                            <a href="{{ route('patients.edit', $patient->id) }}" class="btn btn-sm btn-warning">Edit</a>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
 </main>
 
 @endsection
