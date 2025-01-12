@@ -60,7 +60,7 @@
                                     <ul id="navigation">
                                         {{-- <li><a href="index.html">Home</a></li> --}}
                                         <li><a href="/" class="active">Home<br></a></li>
-                                        <li><a href="">Patient</a></li>
+                                        <li><a href="{{ route('patient')}}">Patient</a></li>
                                         <li><a href="">Appointment</a></li>
                                         {{-- <li><a href="{{ route('create-invoice') }}">Billing</a></li> --}}
                                         <li class="nav-item dropdown">
