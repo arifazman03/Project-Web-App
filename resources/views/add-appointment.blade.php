@@ -35,7 +35,7 @@
 
     <a href="{{ route('appointments.create') }}" class="btn btn-primary mb-3">Add Appointment</a>
 
-    <table class="table table-bordered">
+    <table class="table ">
         <thead class="thead-dark">
             <tr>
                 <th scope ="col">Appointment ID</th>
