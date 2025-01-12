@@ -14,7 +14,7 @@ class DoctorController extends Controller
     public function index()
     {
         $doctors = DB::table('doctors')
-        ->orderBy('updated_at', 'asc')
+        ->orderBy('doctor_id', 'asc')
         ->get();
 
         return view('doctor', ['doctors'=>$doctors]);
