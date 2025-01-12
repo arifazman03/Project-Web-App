@@ -19,7 +19,7 @@
     <form id="invoice-form" action="{{ route('invoice.update', $invoice->id) }}" method="POST">
         @csrf
         @method('PUT')
-
+        
         <div class="form-section">
             <div>
                 <label for="bill_date">Bill Date:</label>
