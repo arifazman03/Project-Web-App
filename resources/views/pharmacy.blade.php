@@ -62,14 +62,18 @@
                             <td>{{ $drug->quantity }}</td>
                             <td>
                                 <!-- Edit Button -->
-                                <a href="{{ route('edit-drug', $drug->id) }}" class="btn btn-warning btn-sm">✏️</a>
+                                <a class="text-primary" href="{{ route('edit-drug', $drug->id) }}">✏️</a>
 
                                 <!-- Delete Button -->
                                 <form action="{{ route('delete-drug', $drug->id) }}" method="POST" style="display:inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this drug?')">🗑️</button>
+                                    <button type="submit" class="p-0 border-0 bg-transparent text-danger" style="font-size: 1rem;" onclick="return confirm('Are you sure you want to delete this drug?')">
+                                        🗑️
+                                    </button>
                                 </form>
+
+
                             </td>
                         </tr>
                         @endforeach
