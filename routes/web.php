@@ -19,7 +19,7 @@ Route::get('/invoice/{id}/edit', [InvoiceController::class, 'edit'])->name('invo
 Route::put('/invoice/{id}/update', [InvoiceController::class, 'update'])->name('invoice.update'); // Keep only PUT
 Route::delete('/invoice/{id}', [InvoiceController::class, 'destroy'])->name('invoice.destroy');
 
-Route::get('/doctor', [DoctorController::class, 'index'])->name('doctor.index');
+Route::get('/doctor', [DoctorController::class, 'index'])->name('doctor');
 Route::get('/add-doctor', [DoctorController::class, 'create'])->name('doctor.create');
 Route::post('/add-doctor', [DoctorController::class, 'store'])->name('doctor.store');
 Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('doctor.edit');
