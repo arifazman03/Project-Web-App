@@ -4,37 +4,88 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AppointmentController extends Controller
 {
     public function index()
     {
-        $appointment = Appointment::all(); // Retrieve all appointment
-        return view('appointment', compact('appointments')); // Pass data to the view
+        $appointment = DB::table('appointment')
+        ->orderBy('updated_at', 'asc')
+        ->get();
+
+        return view('appointment', ['appointment'=>$appointment]);
     }
 
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        return view('add-appointment');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(Request $request)
     {
-        $appointment = appointment::create($request->all());
-        return response()->json($appointment, 201);
+        $request->validate([
+        'appointment_id',
+        'patient_id',
+        'doctor_id',
+        'appointment_date',
+        'appointment_time',
+        ]);
+
+        Appointment::create($request->all());
+
+        return redirect()->route('appointment.index')->with('success', 'Doctor created successfully.');
     }
 
-    public function show($id)
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
     {
-        return Appointment::findOrFail($id);
+        //
     }
 
-    public function update(Request $request, $id)
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
     {
+        $appointment = Appointment::find($id);
+        return view('edit-appointment', compact('appointment'));    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        $request->validate([
+            'appointment_id',
+            'patient_id',
+            'doctor_id',
+            'appointment_date',
+            'appointment_time',
+            ]);
+
         $appointment = Appointment::findOrFail($id);
         $appointment->update($request->all());
-        return response()->json($appointment, 200);
+
+        return redirect()->route('appointment.index')->with('success', 'Doctor updated successfully');
     }
 
-    public function destroy($id)
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
     {
-        Appointment::destroy($id);
-        return response()->json(null, 204);
+        $appointment = Appointment::findOrFail($id);
+        $appointment->delete();
+
+        return redirect()->route('doctor.index')->with('success', 'Doctor deleted successfully');
     }
 }
-
