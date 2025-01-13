@@ -23,8 +23,9 @@
             <!-- Section Tittle -->
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <div class="section-tittle text-center mb-0">
-
+                    <div class="section-tittle text-center mb-100">
+                        <span>Appointment</span>
+                        <h2>Book Appointment</h2>
                     </div>
                 </div>
             </div>
