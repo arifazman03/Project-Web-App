@@ -46,7 +46,8 @@ class MedicalController extends Controller
 
         Medical::create($request->all());
 
-        return redirect()->route('view_medical')->with('success', 'Medical record created successfully.');
+        return redirect()->route('medical.view_more')->with('success', 'Medical record created successfully.');
+        // return redirect()->route('view_medical')->with('success', 'Medical record created successfully.');
     }
 
     /**
@@ -63,7 +64,7 @@ class MedicalController extends Controller
     public function edit(string $id)
     {
         $medical = Medical::find($id);
-        return view('edit-medical', compact('medicals'));    }
+        return view('edit-medical', compact('medical'));    }
 
     /**
      * Update the specified resource in storage.
