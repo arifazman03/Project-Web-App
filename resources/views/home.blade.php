@@ -60,17 +60,18 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle section-tittle2 mb-35">
                             <span>About Our Company</span>
-                            <h2>Welcome To Our Hospital</h2>
-                        </div>
-                        <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
+                            <h2>Vision and Mission</h2>
                         </div>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Appointment <i class="ti-arrow-right"></i></a>
+                            <h1>Vision</h1>
+                            <br><h2>To be a leading healthcare instituition recognise in excellence of Patient care, cutting-edge medical technology and community health improvement</h2>
                         </div>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Emargency 1 <i class="ti-arrow-right"></i></a>
+                            <h1>Mission</h1>
+                            <br><h2>To provide acessible, affordable, and high quality healthcare services while fostering innovation, education, and a culture of compassion.</h2>
+                        </div>
+                        <div class="about-btn1 mb-30">
+                            <!--<a href="about.html" class="btn about-btn2">Emargency 1 <i class="ti-arrow-right"></i></a>-->
                         </div>
                     </div>
                 </div>
