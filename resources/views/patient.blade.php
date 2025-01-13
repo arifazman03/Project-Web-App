@@ -40,8 +40,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Patient ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
+                    <th>Patient Name</th>
                     <th>Date of Birth</th>
                     <th>Gender</th>
                     <th>Phone Number</th>
@@ -55,8 +54,7 @@
                     <tr>
                         <td>{{ $patient->id }}</td>
                         <td>{{ $patient->patient_id }}</td>
-                        <td>{{ $patient->first_name }}</td>
-                        <td>{{ $patient->last_name }}</td>
+                        <td>{{ $patient->patient_name }}</td>
                         <td>{{ $patient->date_of_birth }}</td>
                         <td>{{ $patient->gender }}</td>
                         <td>{{ $patient->phone_number }}</td>
