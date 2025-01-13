@@ -17,6 +17,7 @@ return new class extends Migration
         });*/
         Schema::create('medical', function (Blueprint $table) {
             $table->id();
+            $table->string('record_id');
             $table->string('patient_name');
             $table->string('diagnosis');
             $table->string('treatment');
