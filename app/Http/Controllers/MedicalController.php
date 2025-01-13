@@ -22,7 +22,10 @@ class MedicalController extends Controller
 
     public function view_more()
     {
-        return view('view-medical');
+        $medicals = DB::table('medical')
+        ->orderBy('updated_at', 'asc')
+        ->get();
+        return view('view-medical', compact('medicals'));
     }
 
     public function create()
@@ -43,7 +46,7 @@ class MedicalController extends Controller
 
         Medical::create($request->all());
 
-        return redirect()->route('medical.index')->with('success', 'Medical record created successfully.');
+        return redirect()->route('medical')->with('success', 'Medical record created successfully.');
     }
 
     /**
