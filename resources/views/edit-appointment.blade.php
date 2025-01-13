@@ -50,11 +50,11 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
-                                <label for="doctor_id">Select Doctor</label>
+                                <label for="doctor_id">Doctor ID</label>
                                 <select name="doctor_id" class="form-control" id="doctor_id" required>
-                                    @foreach($doctors as $doctor)
+                                   @foreach($doctors as $doctor)
                                         <option value="{{ $doctor->id }}"
-                                            {{ $appointment->doctor_id == $doctor->id ? 'selected' : '' }}>
+                                            {{ $appointment->doctor_id == $doctor->id ?  }}>
 
                                         </option>
                                     @endforeach
