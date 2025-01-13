@@ -6,20 +6,33 @@
         <div class="slider-height2 d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="hero-cap hero-cap2 text-center">
-                            <h2>Edit Patient</h2>
-                        </div>
+                <div class="col-xl-12">
+                    <div class="hero-cap hero-cap2 text-center">
+                        <h2>Patient</h2>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container mt-5">
+    <!-- Hero End -->
+    <div class="team-area section-padding30">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-tittle text-center mb-100">
+                        <h2>Edit Patient Details</h2>
+                    </div>
+                </div>
+            </div>
+    <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
         <form action="{{ route('patients.update', $patient->id) }}" method="POST">
             @csrf
             @method('PUT')
+            <div class="form-group">
+                <label for="patient_id">Patient ID</label>
+                <input type="text" class="form-control" id="patient_id" name="patient_id" value="{{ $patient->patient_id }}" required readonly>
+            </div>
             <div class="form-group">
                 <label for="first_name">First Name</label>
                 <input type="text" class="form-control" id="first_name" name="first_name" value="{{ $patient->first_name }}" required>
