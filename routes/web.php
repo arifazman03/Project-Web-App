@@ -66,3 +66,4 @@ Route::get('/appointments', [AppointmentController::class, 'index'])->name('appo
 Route::get('/appointments/create-appointment', [AppointmentController::class, 'create'])->name('appointments.create');
 Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
 Route::get('/appointments/{appointment}', [AppointmentController::class, 'show'])->name('appointments.show');
+Route::put('/appointments/{id}', [AppointmentController::class, 'update'])->name('appointments.update');
