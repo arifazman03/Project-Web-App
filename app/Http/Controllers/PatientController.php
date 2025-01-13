@@ -13,10 +13,21 @@ class PatientController extends Controller
         return view('patient', compact('patients')); // Pass data to the view
     }
 
+    public function create()
+    {
+        return view('add-patient'); // Return the view for adding a new patient
+    }
+
+    public function edit($id)
+    {
+        $patient = Patient::findOrFail($id); // Retrieve the patient by ID
+        return view('edit-patient', compact('patient')); // Pass the patient data to the edit view
+    }
+
     public function store(Request $request)
     {
         $patient = Patient::create($request->all());
-        return response()->json($patient, 201);
+        return redirect()->route('patients.index'); // Redirect to the index route
     }
 
     public function show($id)

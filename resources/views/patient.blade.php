@@ -23,8 +23,8 @@
         <!-- Add Patient Button -->
         <a href="{{ route('patients.create') }}" class="btn btn-primary mb-3">Add Patient</a>
 
-        <table border="1" cellpadding="10" cellspacing="0">
-            <thead>
+        <table class="table" style="font-size: 18px;">
+            <thead class="table-gray">
                 <tr>
                     <th>ID</th>
                     <th>First Name</th>
