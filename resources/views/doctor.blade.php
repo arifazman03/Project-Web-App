@@ -29,11 +29,11 @@
                     </div>
                 </div>
             </div>
-            <div class="text-end">
+            <div class="col-md-12 text-right m-3">
                 <a class="btn" href="{{ route('doctor.create') }}" role="button">Add doctor</a>
             </div>
             <div>
-                <table class="table">
+                <table class="table" style="font-size: 18px;">
                     <thead class="table-gray">
                         <tr>
                             <th scope="col">Doctor ID</th>
@@ -55,47 +55,12 @@
                                 <td>{{$doctor->schedule}}</td>
                                 <td>{{$doctor->contact_no}}</td>
                                 <td>
-                                    <form action="{{ route('doctor.destroy',$doctor->id) }}" method="POST">
-                                        <a class="text-primary" href="{{ route('doctor.edit',$doctor->id) }}">✏️</a>
+                                    <form action="{{ route('doctor.destroy', $doctor->id) }}" method="POST" id="delete-form-{{ $doctor->id }}" style="display: none;">
                                         @csrf
                                         @method('DELETE')
-
-                                        <a href="#" class="text-danger delete-doctor" data-id="{{ $doctor->id }}" title="Delete Doctor">🗑️</a>
-                                        <script>
-                                            document.addEventListener('DOMContentLoaded', function () {
-                                                document.querySelectorAll('.delete-doctor').forEach(function (element) {
-                                                    element.addEventListener('click', function (e) {
-                                                        e.preventDefault(); // Prevent default link behavior
-
-                                                        const doctorId = this.getAttribute('data-id'); // Get doctor ID from data-id attribute
-                                                        if (confirm('Are you sure you want to delete this doctor?')) {
-                                                            // Create a form dynamically
-                                                            const form = document.createElement('form');
-                                                            form.action = `/doctor/${doctorId}`; // Adjust this route as needed
-                                                            form.method = 'POST';
-                                                            form.style.display = 'none';
-
-                                                            // Add CSRF and method inputs
-                                                            const csrfInput = document.createElement('input');
-                                                            csrfInput.type = 'hidden';
-                                                            csrfInput.name = '_token';
-                                                            csrfInput.value = '{{ csrf_token() }}'; // Laravel CSRF token
-
-                                                            const methodInput = document.createElement('input');
-                                                            methodInput.type = 'hidden';
-                                                            methodInput.name = '_method';
-                                                            methodInput.value = 'DELETE';
-
-                                                            form.appendChild(csrfInput);
-                                                            form.appendChild(methodInput);
-                                                            document.body.appendChild(form); // Append form to the body
-                                                            form.submit(); // Submit the form
-                                                        }
-                                                    });
-                                                });
-                                            });
-                                        </script>
                                     </form>
+                                    <a class="text-primary" href="{{ route('doctor.edit', $doctor->id) }}">✏️</a>
+                                    <a href="#" class="text-danger delete-doctor" data-id="{{ $doctor->id }}" title="Delete Doctor">🗑️</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -106,5 +71,20 @@
     </div>
     <!-- Team End -->
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.delete-doctor').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default link behavior
+
+                    const doctorId = this.getAttribute('data-id'); // Get doctor ID from data-id attribute
+
+                    const form = document.getElementById('delete-form-' + doctorId); // Get the form by ID
+                    form.submit(); // Submit the form
+
+                });
+            });
+        });
+    </script>
 
 @endsection

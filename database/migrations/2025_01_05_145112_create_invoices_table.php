@@ -17,14 +17,9 @@ return new class extends Migration
             $table->string('contact_info');
             $table->string('email');
             $table->string('invoice_id')->unique();
-            $table->json('description')->nullable();
-            $table->json('quantity')->nullable();
-            $table->json('price')->nullable();
-            $table->json('vat')->nullable();
-            $table->json('final_amount')->nullable();
             $table->decimal('subtotal', 10, 2)->default(0);
             $table->decimal('vat_total', 10, 2)->default(0);
-            $table->decimal('total_amount', 10, 2)->default(0); // Add total_amount column
+            $table->decimal('total_amount', 10, 2)->default(0);
             $table->enum('payment_status', ['PAID', 'UNPAID'])->default('UNPAID');
             $table->timestamps();
         });
@@ -35,4 +30,6 @@ return new class extends Migration
         Schema::dropIfExists('invoices');
     }
 };
+
+
 

@@ -60,8 +60,12 @@
                                     <ul id="navigation">
                                         {{-- <li><a href="index.html">Home</a></li> --}}
                                         <li><a href="/" class="active">Home<br></a></li>
-                                        <li><a href="">Patient</a></li>
-                                        <li><a href="">Appointment</a></li>
+
+                                        //resolved code
+                                        <li><a href="{{ route('patients.index')}}">Patient</a></li>
+                                        <li><a href="{{ route('appointments.index') }}">Appointment</a></li>
+                                        //end resolved code
+
                                         {{-- <li><a href="{{ route('create-invoice') }}">Billing</a></li> --}}
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,15 +77,17 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{ route('medical') }}">Medical</a></li>
-                                        <li><a href="/doctor">Doctor</a></li>
+                                        <li><a href="{{ route('doctor') }}">Doctor</a></li>
                                         <li><a href="{{ route('pharmacy') }}">Pharmacy</a></li>
 
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="#" class="btn header-btn">Log Out</a>
-                            </div>
+                            <div>Welcome, {{ Auth::user()->name }}!</div>
+                            <form action="{{ route('logout') }}" method="POST">
+                             @csrf
+                            <button type="submit">Logout</button>
+                            </form>
                         </div>
                     </div>
                     <!-- Mobile Menu -->
