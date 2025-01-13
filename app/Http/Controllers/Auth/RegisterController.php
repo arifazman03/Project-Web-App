@@ -3,38 +3,46 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Hash;
-use Auth;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
+    // Show the registration form
     public function showRegistrationForm()
     {
         return view('auth.register');
     }
 
+    // Handle registration logic
     public function register(Request $request)
     {
-        // Validate registration data
-        $request->validate([
+        // Validate input
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|confirmed|min:8',
+            'password' => 'required|string|min:8|confirmed',
         ]);
 
-        // Create a new user
+        // Check validation
+        if ($validator->fails()) {
+            return back()->withErrors($validator)->withInput();
+        }
+
+        // Create user and store in database
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
 
-        // Automatically log the user in after registration
-        Auth::login($user);
+        // Log the user in immediately after registration
+        auth()->login($user);
 
-        // Redirect to a page after successful registration (e.g., home/dashboard)
+        // Redirect to the dashboard or home
         return redirect()->route('home');
     }
 }
+

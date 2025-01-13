@@ -56,3 +56,4 @@
     <a href="{{ route('home') }}" class="btn btn-primary">Login</a>
 </form>
             </div>
+@endsection
