@@ -24,6 +24,13 @@ class PatientController extends Controller
         return view('edit-patient', compact('patient')); // Pass the patient data to the edit view
     }
 
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+        $patients = Patient::where('patient_name', 'LIKE', "%{$query}%")->get(); // Search patients by name
+        return view('patient', compact('patients')); // Return the view with search results
+    }
+
     public function store(Request $request)
     {
         $patient = Patient::create($request->all());
