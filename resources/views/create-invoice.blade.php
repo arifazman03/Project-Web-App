@@ -192,31 +192,45 @@
     });
 
     function calculateFinalAmount(element) {
-        const row = element.closest('tr');
-        const quantity = parseFloat(row.querySelector('input[name="quantity[]"]').value) || 0;
-        const price = parseFloat(row.querySelector('input[name="price[]"]').value) || 0;
-        const vat = 6;
-        const finalAmount = quantity * price * (1 + vat / 100);
-        row.querySelector('input[name="final_amount[]"]').value = finalAmount.toFixed(2);
-        updateSummary();
+    const row = element.closest('tr');
+    const quantity = parseFloat(row.querySelector('input[name="quantity[]"]').value) || 0;
+    const price = parseFloat(row.querySelector('input[name="price[]"]').value) || 0;
+    const vat = 6; // Fixed VAT percentage (6%)
+
+    const amountBeforeVAT = quantity * price;
+
+    const vatAmount = amountBeforeVAT * (vat / 100);
+
+    const finalAmount = amountBeforeVAT + vatAmount;
+
+    row.querySelector('input[name="final_amount[]"]').value = finalAmount.toFixed(2);
+
+    updateSummary();
     }
 
+
     function updateSummary() {
-        const rows = document.querySelectorAll('#invoice-items tr');
-        let subtotal = 0;
-        let vatTotal = 0;
-        let totalAmount = 0;
-        rows.forEach(row => {
-            const finalAmount = parseFloat(row.querySelector('input[name="final_amount[]"]').value) || 0;
-            const vat = parseFloat(row.querySelector('input[name="vat[]"]').value) || 0;
-            subtotal += finalAmount;
-            vatTotal += finalAmount * (vat / 100);
-        });
-        totalAmount = subtotal + vatTotal;
-        document.getElementById('subtotal').value = subtotal.toFixed(2);
-        document.getElementById('vat-total').value = vatTotal.toFixed(2);
-        document.getElementById('total-amount').value = totalAmount.toFixed(2);
+    const rows = document.querySelectorAll('#invoice-items tr');
+    let subtotal = 0;
+    let vatTotal = 0;
+    let totalAmount = 0;
+
+    rows.forEach(row => {
+        const finalAmount = parseFloat(row.querySelector('input[name="final_amount[]"]').value) || 0;
+        const amountBeforeVAT = finalAmount / 1.06; 
+        const vatAmount = finalAmount - amountBeforeVAT; 
+
+        subtotal += amountBeforeVAT;  
+        vatTotal += vatAmount;        
+    });
+
+    totalAmount = subtotal + vatTotal; 
+
+    document.getElementById('subtotal').value = subtotal.toFixed(2);
+    document.getElementById('vat-total').value = vatTotal.toFixed(2);
+    document.getElementById('total-amount').value = totalAmount.toFixed(2);
     }
+
 
     function addRow() {
         const table = document.getElementById('invoice-items');
