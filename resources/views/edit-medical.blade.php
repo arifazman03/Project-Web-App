@@ -9,7 +9,7 @@
                 <div class="row">
                 <div class="col-xl-12">
                     <div class="hero-cap hero-cap2 text-center">
-                        <h2>Medical Records</h2>
+                        <h2>Edit Medical Records</h2>
                     </div>
                 </div>
                 </div>
@@ -24,52 +24,48 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
-                        <span>New Record Form</span>
+                        <span>Our Medical Records</span>
                         <h2>Dentistry Department</h2>
                     </div>
                 </div>
             </div>
             <div>
-                <h2>Fill in dentistry department details</h2>
+                <h2>Edit medical record details</h2>
             </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-                <form action="{{ route('doctor.store') }}" method="post" role="form" enctype="multipart/form-data">
+                <form action="{{ route('medical.update',$medical->id) }}" method="post" role="form" enctype="multipart/form-data">
                     @csrf
+                    @method('PUT')
+
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                                <h4>Record ID</h4>
-                              <input type="text" name="record_id" class="form-control" id="record_id" placeholder="DSXX" required>
+                              <input type="text" name="record_id" class="form-control" id="record_id" value="{{ $medical->record_id }}" required>
                             </div>
                           </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <h4>Patient Name</h4>
-                          <input type="text" name="patient_name" class="form-control" id="patient_name" placeholder="Patient Name" required>
+                          <input type="text" name="patient_name" class="form-control" id="patient_name" value="{{ $medical->patient_name }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <h4>Diagnosis</h4>
-                          <input type="text" name="diagnosis" class="form-control" id="diagnosis" placeholder="Diagnosis" required>
+                          <input type="text" name="diagnosis" class="form-control" id="diagnosis" value="{{ $medical->diagnosis }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <h4>Treatment</h4>
-                          <input type="text" name="treatment" class="form-control" id="treatment" placeholder="Treatment" required>
+                          <input type="text" name="treatment" class="form-control" id="treatment" value="{{ $medical->treatment }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <h4>Doctor</h4>
-                          <input type="text" name="doctor" class="form-control" id="doctor" placeholder="Doctor" required>
+                          <input type="text" name="doctor" class="form-control" id="doctor" value="{{ $medical->doctor }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <h4>Date of Records</h4>
-                            <input type="date" name="date_of_records" class="form-control" id="date_of_records" placeholder="DD-MM-YYYY" required>
+                          <input type="date" name="date_of_record" class="form-control" id="date_of_record" value="{{ $medical->date_of_record }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 text-center">
