@@ -16,13 +16,8 @@
                                 <h1 class="cd-headline letters scale">We care about your
                                     <strong class="cd-words-wrapper">
                                         <b class="is-visible">health</b>
-<<<<<<< HEAD
                                         <b>sustainability</b>
                                         <b>longevity</b>
-=======
-                                        {{-- <b>sushi</b>
-                                        <b>steak</b> --}}
->>>>>>> fbfba33e3112970fb8054e102a3d9a5362558d36
                                     </strong>
                                 </h1>
                                 <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
