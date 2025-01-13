@@ -34,7 +34,7 @@ public function store(Request $request)
     ]);
 
     Appointment::create($validated);
-    return redirect()->route('add-appointment')->with('success', 'Appointment created successfully.');
+    return redirect()->route('appointment.index')->with('success', 'Appointment created successfully.');
 }
 
 public function edit(Appointment $appointment)
