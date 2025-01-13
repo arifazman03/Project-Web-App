@@ -142,8 +142,8 @@
                                 <h4><span>Quick Links </span></h4>
                                 <ul class="footer-tittle">
                                    <h4><li><a href="{{ route('doctor') }}" class="text-gray-300 hover:text-white transition-colors">Doctor</a></li></h4>
-                                   <h4><li><a href="{{ route('pharmacy') }}" class="text-gray-300 hover:text-white transition-colors">Patient</a></li></h4>
-                                    <h4><li><a href="{{ route('pharmacy') }}" class="text-gray-300 hover:text-white transition-colors">Appointment</a></li></h4>
+                                   <h4><li><a href="{{ route('patients.index') }}" class="text-gray-300 hover:text-white transition-colors">Patient</a></li></h4>
+                                    <h4><li><a href="{{ route('appointments.index') }}" class="text-gray-300 hover:text-white transition-colors">Appointment</a></li></h4>
                                     <h4><li><a href="{{ route('billing-list') }}" class="text-gray-300 hover:text-white transition-colors">Billing</a></li></h4>
                                     <h4><li><a href="{{ route('medical') }}" class="text-gray-300 hover:text-white transition-colors">Medical</a></li></h4>
                                     <h4><li><a href="{{ route('pharmacy') }}" class="text-gray-300 hover:text-white transition-colors">Pharmacy</a></li></h4>
