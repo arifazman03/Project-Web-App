@@ -78,7 +78,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
+                            <a href="{{ route('register') }}" class="btn btn-primary">Register</a>
 
                         </div>
                     </div>
@@ -98,8 +98,103 @@
     @yield('content')
 </main>
 
-
 <footer>
+    <!--? Footer Start-->
+    <div class="footer-area section-bg" data-background="{{ asset('assets/img/gallery/footer_bg.jpg') }}">
+        <div class="container">
+            <div class="footer-top footer-padding">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="{{asset('assets/img/logo/logo2_footer.png') }}" alt=""></a>
+                            </div>
+                            <div class="footer-tittle">
+                                <h4>About Us</h4>
+                                <div class="footer-pera">
+                                    <p class="info1">Providing innovative healthcare solutions with excellence and care.</p>
+                                    <p class="info1"> Our services are designed to improve lives through technology and expertise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>FAQs</h4>
+
+                                    <div class="footer-pera">
+                                        <p class="info1"><strong>How can I manage patient appointments?</strong></p>
+                                        <p class="info1">As an admin, you can manage appointments through the admin panel by adding, updating, or canceling appointments.</p>
+                                    </div>
+                                    <div class="footer-pera">
+                                        <p class="info1"><strong>How do I update medical records?</strong></p>
+                                        <p class="info1">Admins can update medical records through the hospital's secure management system, ensuring data privacy and compliance.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-number mb-50">
+                                <div class="footer-tittle">
+                                <h4><span>Quick Links </span></h4>
+                                <ul class="footer-tittle">
+                                   <h4><li><a href="{{ route('doctor') }}" class="text-gray-300 hover:text-white transition-colors">Doctor</a></li></h4>
+                                   <h4><li><a href="{{ route('pharmacy') }}" class="text-gray-300 hover:text-white transition-colors">Patient</a></li></h4>
+                                    <h4><li><a href="{{ route('pharmacy') }}" class="text-gray-300 hover:text-white transition-colors">Appointment</a></li></h4>
+                                    <h4><li><a href="{{ route('billing-list') }}" class="text-gray-300 hover:text-white transition-colors">Billing</a></li></h4>
+                                    <h4><li><a href="{{ route('medical') }}" class="text-gray-300 hover:text-white transition-colors">Medical</a></li></h4>
+                                    <h4><li><a href="{{ route('pharmacy') }}" class="text-gray-300 hover:text-white transition-colors">Pharmacy</a></li></h4>
+                                </ul>
+
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+                                                    Send
+                                                </button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="footer-copy-right">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4">
+                        <!-- Footer Social -->
+                        <div class="footer-social f-right">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+
+{{-- <footer>
     <!--? Footer Start-->
     <div class="footer-area section-bg" data-background="{{ asset('assets/img/gallery/footer_bg.jpg') }}">
         <div class="container">
@@ -171,7 +266,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </div>
     <!-- Footer End-->
-</footer>
+</footer> --}}
 <!-- Scroll Up -->
 <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>

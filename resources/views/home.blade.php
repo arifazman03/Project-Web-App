@@ -16,8 +16,8 @@
                                 <h1 class="cd-headline letters scale">We care about your
                                     <strong class="cd-words-wrapper">
                                         <b class="is-visible">health</b>
-                                        <b>sushi</b>
-                                        <b>steak</b>
+                                        <b>sustainability</b>
+                                        <b>longevity</b>
                                     </strong>
                                 </h1>
                                 <p data-animation="fadeInLeft" data-delay="0.1s">Welcome to Hospital Kuala Lumpur Management Website! Manage and monitor hospital operations effectively with ease. We're here to support you in delivering exceptional care.</p>
