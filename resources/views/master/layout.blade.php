@@ -60,12 +60,12 @@
                                     <ul id="navigation">
                                         {{-- <li><a href="index.html">Home</a></li> --}}
                                         <li><a href="/" class="active">Home<br></a></li>
-                                        
+
                                         //resolved code
                                         <li><a href="{{ route('patients.index')}}">Patient</a></li>
                                         <li><a href="{{ route('appointments.index') }}">Appointment</a></li>
                                         //end resolved code
-                                        
+
                                         {{-- <li><a href="{{ route('create-invoice') }}">Billing</a></li> --}}
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -83,9 +83,11 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="#" class="btn header-btn">Log Out</a>
-                            </div>
+                            <div>Welcome, {{ Auth::user()->name }}!</div>
+                            <form action="{{ route('logout') }}" method="POST">
+                             @csrf
+                            <button type="submit">Logout</button>
+                            </form>
                         </div>
                     </div>
                     <!-- Mobile Menu -->

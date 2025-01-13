@@ -7,6 +7,21 @@ use App\Http\Controllers\DrugController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use Illuminate\Support\Facades\Auth;
+
+// Register routes
+Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [RegisterController::class, 'register']);
+// Login routes
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('login', [LoginController::class, 'login'])->name('login');// Logout route
+Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+// Home route (after login)
+Route::middleware('auth')->get('/home', function () {
+    return view('home');
+});
 
 Route::get('/', function () {
     return view('home');
@@ -83,3 +98,5 @@ Route::put('/patients/{id}', [PatientController::class, 'update'])->name('patien
 Route::delete('/patients/{id}', [PatientController::class, 'destroy'])->name('patients.destroy');
 Route::get('/patients/search', [PatientController::class, 'search'])->name('patients.search');
 //end resolved code
+
+

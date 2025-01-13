@@ -2,6 +2,7 @@
 @section('content')
 
 <main>
+
     <!--? slider Area Start-->
     <div class="slider-area position-relative">
         <div class="slider-active">
