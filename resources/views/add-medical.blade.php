@@ -33,7 +33,7 @@
                 <h2>Fill in dentistry department details</h2>
             </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-                <form action="{{ route('medical.store') }}" method="post" role="form" enctype="multipart/form-data" style="font-size: 18px;>
+                <form action="{{ route('medical.store') }}" method="post" role="form" enctype="multipart/form-data" style="font-size: 18px;">
                     @csrf
                     <div class="row">
                         <div class="col-md-12 mb-3">
@@ -69,7 +69,7 @@
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <h4>Date of Records</h4>
-                            <input type="date" name="date_of_records" class="form-control" id="date_of_records" placeholder="DD-MM-YYYY" required>
+                            <input type="date" name="date_of_record" class="form-control" id="date_of_records" placeholder="DD-MM-YYYY" required>
                         </div>
                       </div>
                       <div class="col-md-12 text-center">
@@ -78,12 +78,9 @@
                     </div>
                   </form>
               </div>
-
-
-
         </div>
     </div>
     <!-- Team End -->
-    </main>
+</main>
 
 @endsection
