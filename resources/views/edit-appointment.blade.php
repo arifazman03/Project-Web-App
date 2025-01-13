@@ -81,17 +81,6 @@
 
 
 
-                        <!--div class="col-md-12 mb-3">
-                            <div class="form-group">
-                                <label for="status">Status</label>
-                                <select name="status" class="form-control" id="status" required>
-                                    <option value="scheduled" {{ $appointment->status == 'scheduled' ? 'selected' : '' }}>Scheduled</option>
-                                    <option value="completed" {{ $appointment->status == 'completed' ? 'selected' : '' }}>Completed</option>
-                                    <option value="cancelled" {{ $appointment->status == 'cancelled' ? 'selected' : '' }}>Cancelled</option>
-                                </select>
-                            </div>
-                        </div-->
-
                         <div class="col-md-12 text-center">
                             <button type="submit" class="btn btn-primary">Update Appointment</button>
                             <a href="{{ route('appointments.index') }}" class="btn btn-secondary">Cancel</a>
