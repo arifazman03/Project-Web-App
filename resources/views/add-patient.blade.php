@@ -19,8 +19,8 @@
             <input type="email" name="email" id="email" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="text" name="phone" id="phone" class="form-control" required>
+            <label for="phone_number">Phone</label>
+            <input type="text" name="phone_number" id="phone_number" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="address">Address</label>
