@@ -81,9 +81,9 @@
                         <div class="about-font-img d-none d-lg-block">
                             <img src="{{ asset('assets/img/about2.png') }}" alt="About2 Image">
                         </div>
-                        <div class="about-back-img ">
+                        <!--<div class="about-back-img ">
                             <img src="{{ asset('assets/img/about1.png') }}" alt="About1 Image">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -91,10 +91,10 @@
     </div>
     <!-- About  End-->
     <!--? department_area_start  -->
-    <div class="department_area section-padding2">
+    <!--<div class="department_area section-padding2">
         <div class="container">
             <!-- Section Tittle -->
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12">
                     <div class="section-tittle text-center mb-100">
                         <span>Our Departments</span>
@@ -106,7 +106,7 @@
                 <div class="col-lg-12">
                     <div class="depart_ment_tab mb-30">
                         <!-- Tabs Buttons -->
-                        <ul class="nav" id="myTab" role="tablist">
+                        <!-- <ul class="nav" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                     <i class="flaticon-teeth"></i>
@@ -151,7 +151,7 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -166,10 +166,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -184,10 +184,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!--</div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -202,10 +202,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="Astrology" role="tabpanel" aria-labelledby="Astrology-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -220,10 +220,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="Neuroanatomy" role="tabpanel" aria-labelledby="Neuroanatomy-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -238,10 +238,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="Blood" role="tabpanel" aria-labelledby="Blood-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -256,7 +256,7 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!--</div>
                     </div>
             </div>
 
