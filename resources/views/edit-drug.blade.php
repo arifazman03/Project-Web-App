@@ -40,36 +40,48 @@
                     @csrf
                     @method('PUT')
                     <div class="row">
+                        <!-- Drug Name -->
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                                <input type="text" name="drug_name" class="form-control" id="drug_name" value="{{ $drug->drug_name }}" placeholder="Drug Name" required>
+                                <label for="drug_name">Drug Name</label>
+                                <input type="text" name="drug_name" class="form-control" id="drug_name" value="{{ $drug->drug_name }}" placeholder="Enter drug name" required>
                             </div>
                         </div>
+                        <!-- Manufacture Date -->
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                                <input type="date" name="manufacture_date" class="form-control" id="manufacture_date" value="{{ $drug->manufacture_date }}" placeholder="Manufacture Date" required>
+                                <label for="manufacture_date">Manufacture Date</label>
+                                <input type="date" name="manufacture_date" class="form-control" id="manufacture_date" value="{{ $drug->manufacture_date }}" required>
                             </div>
                         </div>
+                        <!-- Expiry Date -->
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                                <input type="date" name="expiry_date" class="form-control" id="expiry_date" value="{{ $drug->expiry_date }}" placeholder="Expiry Date" required>
+                                <label for="expiry_date">Expiry Date</label>
+                                <input type="date" name="expiry_date" class="form-control" id="expiry_date" value="{{ $drug->expiry_date }}" required>
                             </div>
                         </div>
+                        <!-- Price -->
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                                <input type="number" name="price" class="form-control" id="price" value="{{ $drug->price }}" placeholder="Price (e.g., 10.50)" step="0.01" required>
+                                <label for="price">Price</label>
+                                <input type="number" name="price" class="form-control" id="price" value="{{ $drug->price }}" placeholder="Enter price (e.g., 10.50)" step="0.01" required>
                             </div>
                         </div>
+                        <!-- Quantity -->
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                                <input type="number" name="quantity" class="form-control" id="quantity" value="{{ $drug->quantity }}" placeholder="Quantity" required>
+                                <label for="quantity">Quantity</label>
+                                <input type="number" name="quantity" class="form-control" id="quantity" value="{{ $drug->quantity }}" placeholder="Enter quantity" required>
                             </div>
                         </div>
+                        <!-- Submit Button -->
                         <div class="col-md-12 text-center">
                             <button type="submit" class="btn btn-primary">Update</button>
                         </div>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
