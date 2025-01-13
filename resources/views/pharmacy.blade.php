@@ -7,8 +7,8 @@
         <div class="slider-height2 d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="hero-cap hero-cap2 text-center">
+                <div class="col-xl-12">
+                    <div class="hero-cap hero-cap2 text-center">
                             <h2>Pharmacy</h2>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
     <!-- Team Start -->
     <div class="team-area section-padding30">
         <div class="container">
-            <!-- Section Title -->
+            <!-- Section Tittle -->
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
@@ -32,14 +32,14 @@
             </div>
 
             <!-- Add New Drug Button -->
-            <div class="col-lg-6 text-end">
+            <div class="col-md-12 text-right m-3">
                 <!-- Add New Record Button -->
                 <a href="{{ route('add-drug') }}" class="btn btn-primary">Add New Record</a>
             </div>
 
             <!-- Drug Table -->
             <div>
-                <table class="table">
+                <table class="table" style="font-size: 18px;">
                     <thead class="table-gray">
                         <tr>
                             <th>ID</th>

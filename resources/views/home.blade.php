@@ -16,12 +16,12 @@
                                 <h1 class="cd-headline letters scale">We care about your
                                     <strong class="cd-words-wrapper">
                                         <b class="is-visible">health</b>
-                                        {{-- <b>sushi</b>
-                                        <b>steak</b> --}}
+                                        <b>sustainability</b>
+                                        <b>longevity</b>
                                     </strong>
                                 </h1>
-                                <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>
+                                <p data-animation="fadeInLeft" data-delay="0.1s">Welcome to Hospital Kuala Lumpur Management Website! Manage and monitor hospital operations effectively with ease.</p>
+                                <!--<a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>-->
                             </div>
                         </div>
                     </div>
@@ -37,12 +37,12 @@
                                 <h1 class="cd-headline letters scale">We care about your
                                     <strong class="cd-words-wrapper">
                                         <b class="is-visible">health</b>
-                                        <b>sushi</b>
-                                        <b>steak</b>
+                                        <b>happiness</b>
+                                        <b>prosperity</b>
                                     </strong>
                                 </h1>
-                                <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>
+                                <p data-animation="fadeInLeft" data-delay="0.1s">We're here to support you in delivering exceptional care.</p>
+                                <!--<a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>-->
                             </div>
                         </div>
                     </div>
@@ -60,17 +60,18 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle section-tittle2 mb-35">
                             <span>About Our Company</span>
-                            <h2>Welcome To Our Hospital</h2>
-                        </div>
-                        <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
+                            <h2>Vision and Mission</h2>
                         </div>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Appointment <i class="ti-arrow-right"></i></a>
+                            <h1>Vision</h1>
+                            <br><h2>To be a leading healthcare instituition recognise in excellence of Patient care, cutting-edge medical technology and community health improvement</h2>
                         </div>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Emargency 1 <i class="ti-arrow-right"></i></a>
+                            <h1>Mission</h1>
+                            <br><h2>To provide acessible, affordable, and high quality healthcare services while fostering innovation, education, and a culture of compassion.</h2>
+                        </div>
+                        <div class="about-btn1 mb-30">
+                            <!--<a href="about.html" class="btn about-btn2">Emargency 1 <i class="ti-arrow-right"></i></a>-->
                         </div>
                     </div>
                 </div>
@@ -80,9 +81,9 @@
                         <div class="about-font-img d-none d-lg-block">
                             <img src="{{ asset('assets/img/about2.png') }}" alt="About2 Image">
                         </div>
-                        <div class="about-back-img ">
+                        <!--<div class="about-back-img ">
                             <img src="{{ asset('assets/img/about1.png') }}" alt="About1 Image">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -90,10 +91,10 @@
     </div>
     <!-- About  End-->
     <!--? department_area_start  -->
-    <div class="department_area section-padding2">
+    <!--<div class="department_area section-padding2">
         <div class="container">
             <!-- Section Tittle -->
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12">
                     <div class="section-tittle text-center mb-100">
                         <span>Our Departments</span>
@@ -105,7 +106,7 @@
                 <div class="col-lg-12">
                     <div class="depart_ment_tab mb-30">
                         <!-- Tabs Buttons -->
-                        <ul class="nav" id="myTab" role="tablist">
+                        <!-- <ul class="nav" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                     <i class="flaticon-teeth"></i>
@@ -150,7 +151,7 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -165,10 +166,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -183,10 +184,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!--</div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -201,10 +202,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="Astrology" role="tabpanel" aria-labelledby="Astrology-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -219,10 +220,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="Neuroanatomy" role="tabpanel" aria-labelledby="Neuroanatomy-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -237,10 +238,10 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!-- </div>
                     <div class="tab-pane fade" id="Blood" role="tabpanel" aria-labelledby="Blood-tab">
                         <!-- single_content  -->
-                        <div class="row align-items-center no-gutters">
+                        <!-- <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
                                     <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
@@ -255,7 +256,7 @@
                             </div>
                         </div>
                         <!-- single_content  -->
-                    </div>
+                    <!--</div>
                     </div>
             </div>
 
