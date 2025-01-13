@@ -22,7 +22,10 @@ class MedicalController extends Controller
 
     public function view_more()
     {
-        return view('view-medical');
+        $medicals = DB::table('medical')
+        ->orderBy('updated_at', 'asc')
+        ->get();
+        return view('view-medical', compact('medicals'));
     }
 
     public function create()
@@ -43,7 +46,7 @@ class MedicalController extends Controller
 
         Medical::create($request->all());
 
-        return redirect()->route('medical.index')->with('success', 'Medical record created successfully.');
+        return redirect()->route('view_medical')->with('success', 'Medical record created successfully.');
     }
 
     /**
@@ -60,7 +63,7 @@ class MedicalController extends Controller
     public function edit(string $id)
     {
         $medical = Medical::find($id);
-        return view('edit-medical', compact('medical'));    }
+        return view('edit-medical', compact('medicals'));    }
 
     /**
      * Update the specified resource in storage.
@@ -80,7 +83,7 @@ class MedicalController extends Controller
          $medical = Medical::findOrFail($id);
          $medical->update($request->all());
 
-         return redirect()->route('medical.index')->with('success', 'Medical record updated successfully');
+         return redirect()->route('view_medical')->with('success', 'Medical record updated successfully');
      }
 
      /**
@@ -91,6 +94,6 @@ class MedicalController extends Controller
         $medical = Medical::findOrFail($id);
         $medical->delete();
 
-        return redirect()->route('medical.index')->with('success', 'Medical record deleted successfully');
+        return redirect()->route('view_medical')->with('success', 'Medical record deleted successfully');
     }
 }

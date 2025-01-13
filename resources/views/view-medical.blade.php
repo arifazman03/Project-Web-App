@@ -29,11 +29,11 @@
                     </div>
                 </div>
             </div>
-            <div class="text-end">
+            <div class="col-md-12 text-right m-3">
                 <a class="btn" href="{{ route('medical.create') }}" role="button">Add Record</a>
             </div>
             <div>
-                <table class="table">
+                <table class="table" style="font-size: 18px">
                     <thead class="table-gray">
                         <tr>
                             <th scope="col">Record ID</th>
@@ -99,6 +99,8 @@
                                 </td>
                             </tr>
                         @endforeach
+
+
                     </tbody>
                   </table>
             </div>

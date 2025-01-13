@@ -2,10 +2,38 @@
 
 @section('content')
 <main>
-<div class="container">
-    <h1>Add New Patient</h1>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2 text-center">
+                            <h2>Patient</h2>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <div class="team-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-tittle text-center mb-100">
+                            <h2>Register New Patient</h2>
+                        </div>
+                    </div>
+                </div>
+<!--register new patient-->
+<div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
     <form action="{{ route('patients.store') }}" method="POST">
         @csrf
+        <div class="form-group">
+            <label for="patient_id">Patient ID</label>
+            <input type="text" name="patient_id" id="patient_id" class="form-control" required>
+        </div>
         <div class="form-group">
             <label for="first_name">First Name</label>
             <input type="text" name="first_name" id="first_name" class="form-control" required>
@@ -19,8 +47,8 @@
             <input type="email" name="email" id="email" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="text" name="phone" id="phone" class="form-control" required>
+            <label for="phone_number">Phone</label>
+            <input type="text" name="phone_number" id="phone_number" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="address">Address</label>
