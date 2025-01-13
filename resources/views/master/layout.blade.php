@@ -83,7 +83,6 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div>Welcome, {{ Auth::user()->name }}!</div>
                             <form action="{{ route('logout') }}" method="POST">
                              @csrf
                             <button type="submit">Logout</button>
