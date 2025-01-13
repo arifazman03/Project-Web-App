@@ -20,8 +20,8 @@
                                         <b>steak</b>
                                     </strong>
                                 </h1>
-                                <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>
+                                <p data-animation="fadeInLeft" data-delay="0.1s">Welcome to Hospital Kuala Lumpur Management Website! Manage and monitor hospital operations effectively with ease. We're here to support you in delivering exceptional care.</p>
+                                <!--<a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>-->
                             </div>
                         </div>
                     </div>
