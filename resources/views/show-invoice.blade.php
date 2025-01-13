@@ -19,7 +19,7 @@
     </header>
 
     <h1 style="text-align: center; margin-bottom: 20px;">Invoice Details</h1>
-    
+
     <!-- Invoice Information -->
     <div style="margin-bottom: 20px;">
         <p><strong>Invoice ID:</strong> {{ $invoice->invoice_id }}</p>
@@ -35,7 +35,7 @@
     <p><strong>Billing Address:</strong> {{ $invoice->billing_address }}</p>
     <p><strong>Contact Info:</strong> {{ $invoice->contact_info }}</p>
     <p><strong>Email:</strong> {{ $invoice->email }}</p>
-    
+
     <!-- Invoice Items Table -->
     <h3 style="border-bottom: 1px solid #000; padding-bottom: 5px;">Invoice Items</h3>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
@@ -66,7 +66,7 @@
             @endif
         </tbody>
     </table>
-    
+
     <!-- Summary -->
     <h3 style="border-bottom: 1px solid #000; padding-bottom: 5px;">Summary</h3>
     <p><strong>Subtotal:</strong> MYR {{ number_format($invoice->subtotal, 2) }}</p>
@@ -77,7 +77,7 @@
             {{ $invoice->payment_status }}
         </span>
     </p>
-    
+
     <!-- Buttons Section -->
     <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
         <button type="button" class="btn" style="background-color: #007bff; color: white; font-size: 16px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="printInvoice()">Print</button>
