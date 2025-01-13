@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('patients', function (Blueprint $table) {
             $table->id();
-            $table->string('patient_name');
-            $table->string('first_name');
-            $table->string('last_name');
+            $table->string('patient_name',30);
+            $table->string('first_name',15);
+            $table->string('last_name',15);
             $table->date('date_of_birth');
             $table->string('gender');
-            $table->string('phone_number')->nullable();
-            $table->string('email');
+            $table->string('phone_number',20);
+            $table->string('email')->unique();
             $table->text('address');
             $table->timestamps();
         });

@@ -50,6 +50,11 @@
                         <td>{{ $patient->address }}</td>
                         <td>
                             <a href="{{ route('patients.edit', $patient->id) }}" class="btn btn-sm btn-warning">Edit</a>
+                            <form action="{{ route('patients.destroy', $patient->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this patient?');">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach

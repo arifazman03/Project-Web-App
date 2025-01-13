@@ -46,12 +46,12 @@ class PatientController extends Controller
     {
         $patient = Patient::findOrFail($id);
         $patient->update($request->all());
-        return response()->json($patient, 200);
+        return redirect()->route('patients.index'); // Redirect to the patient list view
     }
 
     public function destroy($id)
     {
         Patient::destroy($id);
-        return response()->json(null, 204);
+        return redirect()->route('patients.index'); // Redirect to the patient list view
     }
 }
