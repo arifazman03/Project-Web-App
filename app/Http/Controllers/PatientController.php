@@ -33,8 +33,23 @@ class PatientController extends Controller
 
     public function store(Request $request)
     {
-        $patient = Patient::create($request->all());
-        return redirect()->route('patients.index'); // Redirect to the index route
+        // Validate the request data
+        $request->validate([
+            'patient_id' => 'required|unique:patients,patient_id',
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required|email|unique:patients,email',
+            'phone_number' => 'required',
+            'address' => 'required',
+            'gender' => 'required',
+            'date_of_birth' => 'required|date',
+        ]);
+
+        // Create the patient record
+        Patient::create($request->all());
+
+        // Redirect to the patient list view
+        return redirect()->route('patients.index')->with('success', 'Patient added successfully!');
     }
 
     public function show($id)
