@@ -63,6 +63,12 @@
                         </div>
                       </div>
 
+                      <form action="{{ route('appointment.store') }}" method="POST">
+                        @csrf
+                        <!-- Add your form fields here -->
+                        <button type="submit">Save</button>
+                    </form>
+
                       <div class="col-md-12 text-center">
                         <button type="submit" class="btn btn-primary">Save</button>
                       </div>

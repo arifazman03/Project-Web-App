@@ -52,6 +52,9 @@ public function update(Request $request, Appointment $appointment)
             'appointment_time',
             ]);
 
+            $appointment = Appointment::findOrFail($id);
+        $appointment->update($request->all());
+
         $appointment->update($validated);
         return redirect()->route('appointments.index')->with('success', 'Appointment updated successfully.');
     }
