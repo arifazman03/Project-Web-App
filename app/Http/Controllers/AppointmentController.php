@@ -53,7 +53,7 @@ public function update(Request $request, Appointment $appointment)
             ]);
 
         $appointment->update($validated);
-        return redirect()->route('add-appointment')->with('success', 'Appointment updated successfully.');
+        return redirect()->route('appointment.index')->with('success', 'Appointment updated successfully.');
     }
 
     // Remove the specified appointment from the database
