@@ -70,13 +70,11 @@ DR KHAIRUL AZMI
 > >
 > > 3.3.6 Pharmacy Management
 
-<ins>**4. ENTITY RELATIONSHIP DIAGRAM**</ins>
+<ins>**4. SEQUENCE DIAGRAM**</ins>
 
-<ins>**5. SEQUENCE DIAGRAM**</ins>
+<ins>**5. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION**</ins>
 
-<ins>**6. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION**</ins>
-
-<ins>**7. CHALLENGES/DIFFICULTIES IN DEVELOPING THE APPLICATION**</ins>
+<ins>**6. CHALLENGES/DIFFICULTIES IN DEVELOPING THE APPLICATION**</ins>
 #  
 
 # 1. INTRODUCTION OF THE PROPOSED WEB APPLICATION
@@ -183,27 +181,22 @@ Key Features:
 - CRUD Operations for Pharmacy Management Module
 
 
-# 4. ENTITY RELATIONSHIP DIAGRAM (ERD)
+# 4. SEQUENCE DIAGRAM
 
-![erd webapp drawio](https://github.com/user-attachments/assets/7ba32166-4cd7-49cf-beb9-4f064b88a427)
-
-
-# 5. SEQUENCE DIAGRAM
-
-## 5.1 Sequence Diagram
+## 4.1 Sequence Diagram
 ![sequence diagram](https://github.com/user-attachments/assets/95cc3c68-e912-4ab1-a930-5d7da88d25a0)
 
 
-# 6. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION
+# 5. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION
 
-## 6.1 Authentication Page
+## 5.1 Authentication Page
 
 ![Authentication Page](https://github.com/user-attachments/assets/c6953c87-606c-4c39-ba51-097805ad73fa)
 
 This page requires the admin to enter their username and password to login into the system
 to register patient,update appointment and etc.
 
-## 6.2 Home Page
+## 5.2 Home Page
 
 ![HOME - sultan (2)](https://github.com/user-attachments/assets/081c2262-06b5-4d2f-b94c-2d2014cabc61)
 
@@ -211,7 +204,7 @@ to register patient,update appointment and etc.
 Admins could see the Homepage of the system with navigation bar on top of the page with
 selection of menu such as doctors,appointment,invoice,pharmacy and etc.
 
-## 6.3 Patient Registration Page
+## 5.3 Patient Registration Page
 
 ![Patient-Firdaus](https://github.com/user-attachments/assets/23cdf7e6-2bb3-4df6-8365-6e1ee5de86e5)
 ![add-Firdaus](https://github.com/user-attachments/assets/4861a385-0310-4fe2-a500-cc1ae9d62acc)
@@ -222,7 +215,7 @@ selection of menu such as doctors,appointment,invoice,pharmacy and etc.
 This page will show the user/administrator the patient list, registeration and administrator can manage the list by CRUD operation.
 User/administrator of the hospital can input the details of the patient. Click submit button to create a new patient record.
 
-## 6.4 Appointment Scheduling Page
+## 5.4 Appointment Scheduling Page
 ![add appointment-fatnin](https://github.com/user-attachments/assets/c482bac3-2635-48de-bf68-0b651e3595aa)
 
 ![view appointmnet-fatnin](https://github.com/user-attachments/assets/2543f760-6c76-4d18-8676-ac55e9b9aa9b)
@@ -237,7 +230,7 @@ The Appointment page will display appointment form details on the table such as
 appointment id, doctor id, appointment date, and appointment time.
 Admins is allowed to add, view, update or delete appointment details.
 
-## 6.5 Billing and Payment Page
+## 5.5 Billing and Payment Page
 
 ![Create invoice - ain](https://github.com/user-attachments/assets/36ab541a-9a31-4e6c-a766-d2d1a063b422)
 
@@ -253,7 +246,7 @@ Admins is allowed to add, view, update or delete appointment details.
 The Billing and Invoice section will display the billing list of the patients and their payment status. 
 Admin is allowed to create a new invoice, view and update the existing invoice and delete invoice.
 
-## 6.6 Medical Records Page
+## 5.6 Medical Records Page
 
 ![medical records - adlyn](https://github.com/user-attachments/assets/708479e8-81de-45aa-97e3-e628f7a81f77)
 
@@ -262,9 +255,7 @@ Admin is allowed to create a new invoice, view and update the existing invoice a
 ![read - adlyn](https://github.com/user-attachments/assets/55160f5b-4e0c-4308-8b46-1bd16797223c)
 
 
-
-
-## 6.7 Doctor Management Page
+## 5.7 Doctor Management Page
 
 ![Doctor View and Delete - arif](https://github.com/user-attachments/assets/2aef5f9c-855e-4edc-86d8-cb1ddccf234c)
 ![Doctor Add and Update - arif](https://github.com/user-attachments/assets/8031600b-9c18-4db7-8359-989b6d4f2ab7)
@@ -274,7 +265,7 @@ The Doctor page will display doctor details on the table such as
 id, name, department, email, schedule and contact number.
 Admin is allowed to add, update or delete doctor details.
 
-## 6.8 Pharmacy Management Page
+## 5.8 Pharmacy Management Page
 
 ![Pharmacy-Sultan](https://github.com/user-attachments/assets/78a52105-5aa0-41e4-9e56-4842595f514d)
 
@@ -288,20 +279,20 @@ The Pharmacy Page will display the drugs details in a table with its manufacture
 expiry date,quantity and price.Admin could add a new record of drugs,
 update the record and delete the records.
 
-# 7. CHALLENGES/DIFFICULTIES IN DEVELOPING THE APPLICATION
+# 6. CHALLENGES/DIFFICULTIES IN DEVELOPING THE APPLICATION
 
-## 7.1 Authentication Page 
+## 6.1 Authentication Page 
 
-## 7.2 Home Page
+## 6.2 Home Page
 
-## 7.3 Patient Registration Page 
+## 6.3 Patient Registration Page 
 
-## 7.4 Appointment Scheduling Page 
+## 6.4 Appointment Scheduling Page 
 
-## 7.5 Billing and Payment Page 
+## 6.5 Billing and Payment Page 
 
-## 7.6 Medical Records Page 
+## 6.6 Medical Records Page 
 
-## 7.7 Doctor Management Page
+## 6.7 Doctor Management Page
 
-## 7.8 Pharmacy Management Page 
+## 6.8 Pharmacy Management Page 
