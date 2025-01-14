@@ -7,13 +7,16 @@
 
 ## INFO 3305 -- WEB APPLICATION DEVELOPMENT
 
-## GROUP PROJECT PROPOSAL
+## FINAL REPORT
 
 ### SECTION: SECTION 01
 
 ### TITLE PROJECT: HOSPITAL MANAGEMENT SYSTEM
 
 ### GROUP: GROUP A
+
+### GITHUB LINK:
+
 
 ### PREPARED BY:
 
@@ -40,7 +43,7 @@ DR KHAIRUL AZMI
 
 **DUE**
 
-24/12/2024
+15/01/2025
 
 **Table of Contents**
 
@@ -71,24 +74,9 @@ DR KHAIRUL AZMI
 
 <ins>**5. SEQUENCE DIAGRAM**</ins>
 
-<ins>**6. WEBSITE MOCK-UP**<ins>
+<ins>**6. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION**</ins>
 
-> 6.1 Home Page 
->
-> 6.2 User Authentication
->
-> 6.3 Patient Registration
->
-> 6.4 Appointment Scheduling
->
-> 6.5 Billing and Invoice
->
-> 6.6 Medical Records
->
-> 6.7 Doctor Management
->
-> 6.8 Pharmacy Management
-> 
+<ins>**7. CHALLENGES/DIFFICULTIES IN DEVELOPING THE APPLICATION**</ins>
 #  
 
 # 1. INTRODUCTION OF THE PROPOSED WEB APPLICATION
@@ -206,7 +194,7 @@ Key Features:
 ![sequence diagram](https://github.com/user-attachments/assets/95cc3c68-e912-4ab1-a930-5d7da88d25a0)
 
 
-# 6. WEBSITE MOCK-UP
+# 6. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION
 
 ## 6.1 Authentication Page
 
@@ -299,3 +287,21 @@ Admin is allowed to add, update or delete doctor details.
 The Pharmacy Page will display the drugs details in a table with its manufactured date,
 expiry date,quantity and price.Admin could add a new record of drugs,
 update the record and delete the records.
+
+# 7. CHALLENGES/DIFFICULTIES IN DEVELOPING THE APPLICATION
+
+## 7.1 Authentication Page 
+
+## 7.2 Home Page
+
+## 7.3 Patient Registration Page 
+
+## 7.4 Appointment Scheduling Page 
+
+## 7.5 Billing and Payment Page 
+
+## 7.6 Medical Records Page 
+
+## 7.7 Doctor Management Page
+
+## 7.8 Pharmacy Management Page 
