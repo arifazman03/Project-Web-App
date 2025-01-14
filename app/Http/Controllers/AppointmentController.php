@@ -18,7 +18,7 @@ public function show($id)
         // Add your logic here to show a specific appointment
         // For example:
         $appointment = Appointment::findOrFail($id);
-        return view('appointments.show', compact('appointment'));
+        return view('appointments.show', compact('appointments'));
     }
 public function create(){
     return view('create-appointment');
@@ -34,12 +34,12 @@ public function store(Request $request)
     ]);
 
     Appointment::create($validated);
-    return redirect()->route('appointment.index')->with('success', 'Appointment created successfully.');
+    return redirect()->route('appointments.index')->with('success', 'Appointment created successfully.');
 }
 
 public function edit(Appointment $appointment)
 {
-    return view('appointments.edit', compact('appointment'));
+    return view('appointments.edit', compact('appointments'));
 }
 
 public function update(Request $request, Appointment $appointment)
