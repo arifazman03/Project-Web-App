@@ -60,6 +60,6 @@ public function update(Request $request, Appointment $appointment)
     public function destroy(Appointment $appointment)
     {
         $appointment->delete();
-        return redirect()->route('add-appointment')->with('success', 'Appointment deleted successfully.');
+        return redirect()->route('appointment.index')->with('success', 'Appointment deleted successfully.');
     }
 }
