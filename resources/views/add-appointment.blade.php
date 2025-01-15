@@ -45,7 +45,7 @@
                 <th scope ="col">Doctor ID</th>
                 <th scope ="col">Appointment Date</th>
                 <th scope ="col">Appointment Time</th>
-                <th scope ="col">Actions</th>
+                <th scope ="col">Action</th>
             </tr>
 
         </thead>
