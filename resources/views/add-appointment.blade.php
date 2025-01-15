@@ -51,9 +51,7 @@
             </div>
         </div>
     </div>
-    tfoot td {
-        text-align: center;
-        padding-top: 20px;
+
     }
         <a class="btn" href="{{ route('appointments.create') }}" role="button">Add Appointment</a>
 
