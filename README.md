@@ -314,13 +314,11 @@ Admin is allowed to add, update or delete doctor details.
 
 ## 5.8 Pharmacy Management Page
 
-![Pharmacy-Sultan](https://github.com/user-attachments/assets/78a52105-5aa0-41e4-9e56-4842595f514d)
+![PharmacyView](https://github.com/user-attachments/assets/c131b4b6-3141-46db-87cf-f59aff4dc4dd)
 
-![Pharmacy Update Record-Sultan](https://github.com/user-attachments/assets/98a5eef2-a145-42e0-a472-21edab3543e5)
+![PharmacyAdd](https://github.com/user-attachments/assets/bb58463f-760a-4b72-a7c9-814e4afe0241)
 
-![Pharmacy Delete Record-Sultan](https://github.com/user-attachments/assets/c0c12e65-c453-4f2a-ad8b-e21796396356)
-
-![Pharmacy Add Record-Sultan](https://github.com/user-attachments/assets/8ee52f8f-9dd5-4f5e-bc84-77d5c43a26b1)
+![PharmacyUpdate](https://github.com/user-attachments/assets/381a1cf8-08dd-4c48-aba5-cb3beb10fa54)
 
 The Pharmacy Page will display the drugs details in a table with its manufactured date,
 expiry date,quantity and price.Admin could add a new record of drugs,
@@ -362,8 +360,4 @@ Skipping the database migration prevents changes from reflecting in the database
 ## 6.7 Doctor Management Page
 
 ## 6.8 Pharmacy Management Page 
-![PharmacyView](https://github.com/user-attachments/assets/c131b4b6-3141-46db-87cf-f59aff4dc4dd)
 
-![PharmacyAdd](https://github.com/user-attachments/assets/bb58463f-760a-4b72-a7c9-814e4afe0241)
-
-![PharmacyUpdate](https://github.com/user-attachments/assets/381a1cf8-08dd-4c48-aba5-cb3beb10fa54)
