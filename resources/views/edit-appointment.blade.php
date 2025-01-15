@@ -35,7 +35,7 @@
                 <h2>Edit appointment details</h2>
             </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-                <form action="{{ route('appointment.update',$appointment->id) }}" method="post" role="form" enctype="multipart/form-data">
+                <form action="{{ route('appointments.update',$appointment->id) }}" method="post" role="form" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
