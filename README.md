@@ -236,6 +236,9 @@ a. Create invoice page
 
 b. Read invoice page
     The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
+![billinglist](https://github.com/user-attachments/assets/020bb758-74ce-4448-b105-8c335ccb7e67)
+![showinvoice1](https://github.com/user-attachments/assets/b22cbeb7-9338-44ca-a3ad-07c5a6ffdb29)
+![showinvoice2](https://github.com/user-attachments/assets/5adcdbba-f7c6-412f-bc5b-5bbf7c04ed31)
 c. Update invoice page
     Admin can update or edit the existing invoice with the latest information that need to be updated.
 d. Delete invoice page
