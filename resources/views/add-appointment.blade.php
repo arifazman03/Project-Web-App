@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    }
+    <div class="button-container text-right">
         <a class="btn" href="{{ route('appointments.create') }}" role="button">Add Appointment</a>
 
     <!-- Team End -->
