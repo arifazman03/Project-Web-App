@@ -33,6 +33,14 @@ public function store(Request $request)
         'appointment_time' => 'required',
     ]);
 
+    $appointment = new Appointment();
+        $appointment->appointment_id = $request->appointment_id;
+        $appointment->patient_id = $request->patient_id;
+        $appointment->doctor_id = $request->doctor_id;
+        $appointment->appointment_date = $request->appointment_date;
+        $appointment->appointment_time = $request->appointment_time;
+        $appointment->save();
+
     Appointment::create($validated);
     return redirect()->route('appointments.index')->with('success', 'Appointment created successfully.');
 }
