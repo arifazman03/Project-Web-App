@@ -82,8 +82,9 @@
 
 
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary">Update Appointment</button>
-                            <a href="{{ route('appointments.index') }}" class="btn btn-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Save</button>
+
+
                         </div>
                     </div>
                 </form>
