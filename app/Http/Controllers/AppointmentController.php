@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AppointmentController extends Controller
 {
+
     public function index()
-{
+    {
+        $doctors = DB::table('appointments')
+        ->orderBy('appointment_id', 'asc')
+        ->get();
+
     $appointments = Appointment::all();
     return view('add-appointment', compact('appointments'));
 }
