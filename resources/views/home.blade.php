@@ -354,9 +354,9 @@
     </div>
     <!--All startups End -->
      <!--? Team Start -->
-     <div class="team-area section-padding30">
+     <!-- <div class="team-area section-padding30">
         <div class="container">
-            <!-- Section Tittle -->
+            <!-- Section Tittle --
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
@@ -366,7 +366,7 @@
                 </div>
             </div>
             <div class="row">
-                <!-- single Tem -->
+                <!-- single Tem --
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                     <div class="single-team mb-30">
                         <div class="team-img">
@@ -375,7 +375,7 @@
                         <div class="team-caption">
                             <h3><a href="#">Alvin Maxwell</a></h3>
                             <span>Creative UI Designer</span>
-                            <!-- Team social -->
+                            <!-- Team social --
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fas fa-globe"></i></a>
@@ -393,7 +393,7 @@
                         <div class="team-caption">
                             <h3><a href="#">Maria Smith</a></h3>
                             <span>Agency Manager</span>
-                            <!-- Team social -->
+                            <!-- Team social --
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fas fa-globe"></i></a>
@@ -411,7 +411,7 @@
                         <div class="team-caption">
                             <h3><a href="#">Angela Doe</a></h3>
                             <span>Designer</span>
-                            <!-- Team social -->
+                            <!-- Team social --
                             <div class="team-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fas fa-globe"></i></a>
@@ -425,13 +425,13 @@
         </div>
     </div>
     <!-- Team End -->
-     <!--? Contact form Start -->
+     <!--? Contact form Start --
      <div class="contact-form-main">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-xl-7 col-lg-7">
                     <div class="form-wrapper">
-                        <!--Section Tittle  -->
+                        <!--Section Tittle  --
                         <div class="form-tittle">
                             <div class="row ">
                                 <div class="col-xl-12">
@@ -442,7 +442,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--End Section Tittle  -->
+                        <!--End Section Tittle  --
                         <form id="contact-form" action="#" method="POST">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
@@ -485,7 +485,7 @@
                 </div>
             </div>
         </div>
-        <!-- contact left Img-->
+        <!-- contact left Img--
         <div class="from-left d-none d-lg-block">
             <img src="assets/img/gallery/contact_form.png" alt="">
         </div>
