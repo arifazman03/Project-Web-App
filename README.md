@@ -387,6 +387,9 @@ Ensuring the layout, colors, and typography are visually appealing and consisten
 Typos in route names ($appointment to $appointments) lead to undefined variable errors.
 **Solution:** Double-check variable names to ensure consistency throughout the code.
 
+### 1.404 Page not found
+Error occurred due to improper routing in web.php or incorrect href attribute.
+
 
 ## 6.5 Billing and Invoice Page
 ### 1. Incorrect Calculation of VAT and Total Amount
