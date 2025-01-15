@@ -69,14 +69,14 @@ public function update(Request $request, $id)
             'appointment_time',
             ]);
 
-        $appointment->update();
+        $appointment->update($id);
         return redirect()->route('appointments.index')->with('success', 'Appointment updated successfully.');
     }
 
     // Remove the specified appointment from the database
     public function destroy(Appointment $appointment)
     {
-        $appointment->delete();
+        $appointment->delete($id);
         return redirect()->route('appointments.index')->with('success', 'Appointment deleted successfully.');
     }
 
