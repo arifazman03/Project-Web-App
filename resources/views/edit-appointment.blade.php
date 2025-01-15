@@ -35,38 +35,43 @@
                 <h2>Edit appointment details</h2>
             </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-                <form action="{{ route('appointments.update',$appointment->id) }}" method="post" role="form" enctype="multipart/form-data">
+                <form action="{{ route('appointments.update',$doctor->id) }}" method="post" role="form" enctype="multipart/form-data" style="font-size: 18px;">
                     @csrf
                     @method('PUT')
 
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="appointment_id" class="form-control" id="appointment_id" value="{{ $appointment->appointment_id }}" required>
+                                <label for="appointment_id" class="form-label">Appointment ID</label>
+                              <input type="text" name="appointment_id" class="form-control" id="appointment_id" style="font-size: 18px;" required>
                             </div>
                           </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" name="patient_id" class="form-control" id="patient_id" value="{{ $appointment->patient_id }}" required>
+                            <label for="patient_id" class="form-label">Patient ID</label>
+                          <input type="text" name="patient_id" class="form-control" id="patient_id" style="font-size: 18px;" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" name="doctor_id" class="form-control" id="doctor_id" value="{{ $appointment->doctor_id }}" required>
+                            <label for="doctor_id" class="form-label">Doctor ID</label>
+                          <input type="text" name="doctor_id" class="form-control" id="doctor_id" style="font-size: 18px;" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="date" name="appointment_date" class="form-control" id="appointment_date" value="{{ $appointment->appointment_date }}" required>
+                            <label for="appointment_date" class="form-label">Appointment Date</label>
+                          <input type="date" name="appointment_date" class="form-control" id="appointment_date" style="font-size: 18px;" required>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            <label for="appointment_time" class="form-label">Appointment Time</label>
+                          <input type="text" name="appointment_time" class="form-control" id="appointment_time" style="font-size: 18px;" required>
                         </div>
                       </div>
 
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <input type="text" name="appointment_time" class="form-control" id="appointment_time" value="{{ $appointment->appointment_time }}" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12 text-center">
+                      <div class="col-md-12 text-right">
                         <button type="submit" class="btn btn-primary">Save</button>
                       </div>
                     </div>
@@ -81,4 +86,3 @@
     </main>
 
 @endsection
-
