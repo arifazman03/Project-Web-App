@@ -51,8 +51,10 @@
             </div>
         </div>
     </div>
-
-        <td colspan="6" style="text-align: center;">
+    tfoot td {
+        text-align: center;
+        padding-top: 20px;
+    }
         <a class="btn" href="{{ route('appointments.create') }}" role="button">Add Appointment</a>
 
     <!-- Team End -->
