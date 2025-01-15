@@ -56,7 +56,7 @@
                 <tr>
                     <td>{{$appointment->appointment_id}}</td>
                     <td>{{$appointment->patient_id}}</td>
-                    <td>{{$dappointment->doctor_id}}</td>
+                    <td>{{$appointment->doctor_id}}</td>
                     <td>{{$appointment->appointment_date}}</td>
                     <td>{{$appointment->appointment_time}}</td>
 
