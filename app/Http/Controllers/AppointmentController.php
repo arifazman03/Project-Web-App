@@ -55,7 +55,7 @@ public function store(Request $request)
 }
 public function edit(Appointment $appointment)
 {
-    return view('edit-appointment', compact('appointments'));
+    return view('edit-appointment', compact('appointment'));
 }
 
 public function update(Request $request, Appointment $appointment)
