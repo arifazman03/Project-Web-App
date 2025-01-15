@@ -66,7 +66,7 @@
                         <div class="col-lg-7">
                             <div class="dept_info">
                                 <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <p>Our Dentistry Department is dedicated to providing comprehensive oral health care for patients of all ages. We strive to deliver the highest standards of dental care, helping you achieve a healthy and confident smile. </p>
                                 <a href="{{ route('medical.view_more') }}" class="dep-btn">View Records<i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                         <div class="col-lg-7">
                             <div class="dept_info">
                                 <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <p>Our Dentistry Department is dedicated to providing comprehensive oral health care for patients of all ages. From routine check-ups and cleanings to advanced procedures like restorative and cosmetic dentistry, our skilled team ensures a comfortable and personalized experience. Equipped with state-of-the-art technology, we strive to deliver the highest standards of dental care, helping you achieve a healthy and confident smile. </p>
                                 <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ class Patient extends Model
 
     protected $fillable = [
         'patient_id',
-        'patien _name',
+        'patient _name',
         'first_name',
         'last_name',
         'date_of_birth',
@@ -22,16 +22,23 @@ class Patient extends Model
     ];
 
     // Mutator to concatenate first_name and last_name into patient_name
+    public function setPatientNameAttribute()
+    {
+        if (isset($this->attributes['first_name']) && isset($this->attributes['last_name'])) {
+            $this->attributes['patient_name'] = $this->attributes['first_name'] . ' ' . $this->attributes['last_name'];
+        }
+    }
+
     public function setFirstNameAttribute($value)
     {
         $this->attributes['first_name'] = $value;
-        $this->attributes['patient_name'] = $this->attributes['first_name'] . ' ' . $this->attributes['last_name'];
+        $this->setPatientNameAttribute();
     }
 
     public function setLastNameAttribute($value)
     {
         $this->attributes['last_name'] = $value;
-        $this->attributes['patient_name'] = $this->attributes['first_name'] . ' ' . $this->attributes['last_name'];
+        $this->setPatientNameAttribute();
     }
 
 }

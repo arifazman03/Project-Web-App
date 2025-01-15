@@ -9,7 +9,7 @@
                 <div class="row">
                 <div class="col-xl-12">
                     <div class="hero-cap hero-cap2 text-center">
-                        <h2>Doctors</h2>
+                        <h2>Edit Medical Records</h2>
                     </div>
                 </div>
                 </div>
@@ -20,61 +20,63 @@
     <!--? Team Start -->
     <div class="team-area section-padding30">
         <div class="container">
+            <!-- Section Tittle -->
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
-                        <h2>Fill in doctor details</h2>
+                        <span>Our Medical Records</span>
+                        <h2>Dentistry Department</h2>
                     </div>
                 </div>
             </div>
+            <div>
+                <h2>Edit medical record details</h2>
+            </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-                <form action="{{ route('doctor.update',$doctor->id) }}" method="post" role="form" enctype="multipart/form-data" style="font-size: 18px;">
+                <form action="{{ route('medical.update',$medical->id) }}" method="post" role="form" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                                <label for="doctor_id" class="form-label">Doctor ID</label>
-                              <input type="text" name="doctor_id" class="form-control" id="doctor_id" value="{{ $doctor->doctor_id }}" style="font-size: 18px;" required>
+                              <input type="text" name="record_id" class="form-control" id="record_id" value="{{ $medical->record_id }}" required>
                             </div>
                           </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <label for="doctor_name" class="form-label">Doctor Name</label>
-                          <input type="text" name="doctor_name" class="form-control" id="doctor_name" value="{{ $doctor->doctor_name }}" style="font-size: 18px;" required>
+                          <input type="text" name="patient_name" class="form-control" id="patient_name" value="{{ $medical->patient_name }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <label for="department" class="form-label">Department</label>
-                          <input type="text" name="department" class="form-control" id="department" value="{{ $doctor->department }}" style="font-size: 18px;" required>
+                          <input type="text" name="diagnosis" class="form-control" id="diagnosis" value="{{ $medical->diagnosis }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <label for="email_address" class="form-label">Email Address</label>
-                          <input type="email" name="email_address" class="form-control" id="email_address" value="{{ $doctor->email_address }}" style="font-size: 18px;" required>
+                          <input type="text" name="treatment" class="form-control" id="treatment" value="{{ $medical->treatment }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <label for="schedule" class="form-label">Schedule</label>
-                          <input type="text" name="schedule" class="form-control" id="schedule" value="{{ $doctor->schedule }}" style="font-size: 18px;" required>
+                          <input type="text" name="doctor" class="form-control" id="doctor" value="{{ $medical->doctor }}" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                            <label for="contact_no" class="form-label">Contact No</label>
-                          <input type="text" name="contact_no" class="form-control" id="contact_no" value="{{ $doctor->contact_no }}" style="font-size: 18px;" required>
+                          <input type="date" name="date_of_record" class="form-control" id="date_of_record" value="{{ $medical->date_of_record }}" required>
                         </div>
                       </div>
-                      <div class="col-md-12 text-right">
+                      <div class="col-md-12 text-center">
                         <button type="submit" class="btn btn-primary">Save</button>
                       </div>
                     </div>
                   </form>
               </div>
+
+
+
         </div>
     </div>
     <!-- Team End -->
