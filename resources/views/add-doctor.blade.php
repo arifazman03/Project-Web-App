@@ -20,53 +20,54 @@
     <!--? Team Start -->
     <div class="team-area section-padding30">
         <div class="container">
-            <!-- Section Tittle -->
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
-                        <span>Our Doctors</span>
-                        <h2>Our Specialist</h2>
+                        <h2>Fill in doctor details</h2>
                     </div>
                 </div>
             </div>
-            <div>
-                <h2>Fill in doctor details</h2>
-            </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-                <form action="{{ route('doctor.store') }}" method="post" role="form" enctype="multipart/form-data">
+                <form action="{{ route('doctor.store') }}" method="post" role="form" enctype="multipart/form-data" style="font-size: 18px;">
                     @csrf
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="doctor_id" class="form-control" id="doctor_id" placeholder="Doctor ID" required>
+                                <label for="doctor_id" class="form-label">Doctor ID</label>
+                              <input type="text" name="doctor_id" class="form-control" id="doctor_id" required>
                             </div>
                           </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" name="doctor_name" class="form-control" id="doctor_name" placeholder="Doctor Name" required>
+                            <label for="doctor_name" class="form-label">Doctor Name</label>
+                          <input type="text" name="doctor_name" class="form-control" id="doctor_name" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" name="department" class="form-control" id="department" placeholder="Department" required>
+                            <label for="department" class="form-label">Department</label>
+                          <input type="text" name="department" class="form-control" id="department" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="email" name="email_address" class="form-control" id="email_address" placeholder="Email Address" required>
+                            <label for="email_address" class="form-label">Email Address</label>
+                          <input type="email" name="email_address" class="form-control" id="email_address" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" name="schedule" class="form-control" id="schedule" placeholder="Schedule" required>
+                            <label for="schedule" class="form-label">Schedule</label>
+                          <input type="text" name="schedule" class="form-control" id="schedule" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
-                          <input type="text" name="contact_no" class="form-control" id="contact_no" placeholder="Contact No" required>
+                            <label for="contact_no" class="form-label">Contact No</label>
+                          <input type="text" name="contact_no" class="form-control" id="contact_no" required>
                         </div>
                       </div>
-                      <div class="col-md-12 text-center">
+                      <div class="col-md-12 text-right">
                         <button type="submit" class="btn btn-primary">Save</button>
                       </div>
                     </div>

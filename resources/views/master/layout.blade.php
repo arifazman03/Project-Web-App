@@ -60,8 +60,13 @@
                                     <ul id="navigation">
                                         {{-- <li><a href="index.html">Home</a></li> --}}
                                         <li><a href="/" class="active">Home<br></a></li>
+<<<<<<< HEAD
                                         <li><a href="">Patient</a></li>
                                         <li><a href="/appointments ">Appointment</a></li>
+=======
+                                        <li><a href="{{ route('patient')}}">Patient</a></li>
+                                        <li><a href="/appointments">Appointment</a></li>
+>>>>>>> main
                                         {{-- <li><a href="{{ route('create-invoice') }}">Billing</a></li> --}}
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
