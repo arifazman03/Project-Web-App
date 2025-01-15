@@ -310,13 +310,17 @@ Record 10 successfully deleted.
 
 ## 5.7 Doctor Management Page
 
-![Doctor View and Delete - arif](https://github.com/user-attachments/assets/2aef5f9c-855e-4edc-86d8-cb1ddccf234c)
-![Doctor Add and Update - arif](https://github.com/user-attachments/assets/8031600b-9c18-4db7-8359-989b6d4f2ab7)
+![Doctor View and Delete - arif](https://github.com/user-attachments/assets/a95b9791-0794-478e-8395-dd8120cb5747)
 
+Clicking Doctor button in Home page will redirect Admin to this Doctor page which display the Doctor table. This page also include Add doctor button to add doctor details, Edit icon to edit doctor details and Delete icon to delete doctor details. 
 
-The Doctor page will display doctor details on the table such as
-id, name, department, email, schedule and contact number.
-Admin is allowed to add, update or delete doctor details.
+![Doctor Add - arif](https://github.com/user-attachments/assets/7b208519-488d-4b75-819b-4523cb744b1a)
+
+Clicking Add doctor button will redirect Admin to the Add Doctor page that has a form for Admin to insert doctor details.
+
+![Doctor Edit - arif](https://github.com/user-attachments/assets/09a69d1b-fcf3-4d56-8aa5-80f0d3a1c3d1)
+
+Clicking Edit icon will redirect Admin to the Edit page that has a form for Admin to edit doctor details.
 
 ## 5.8 Pharmacy Management Page
 
