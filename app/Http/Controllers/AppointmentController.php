@@ -43,8 +43,10 @@ public function store(Request $request)
 
     Appointment::create($validated);
     return redirect()->route('appointments.index')->with('success', 'Appointment created successfully.');
-}
 
+    \Log::info('Appointment Data:', $request->all());
+
+}
 public function edit(Appointment $appointment)
 {
     return view('edit-appointment', compact('appointments'));
@@ -70,4 +72,8 @@ public function update(Request $request, Appointment $appointment)
         $appointment->delete();
         return redirect()->route('appointments.index')->with('success', 'Appointment deleted successfully.');
     }
+
+
+
+
 }
