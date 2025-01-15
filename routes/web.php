@@ -115,13 +115,13 @@ Route::get('/patients/search', [PatientController::class, 'search'])->name('pati
 
 
 
-//Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
-//Route::get('appointments/{appointment}', [AppointmentController::class, 'show']);
-//Route::get('/appointments/create-appointment', [AppointmentController::class, 'create'])->name('appointments.create');
-//Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
-//Route::get('/appointments/{id}/edit', [AppointmentController::class, 'edit'])->name('appointments.edit');
-//Route::get('appointments/{appointment}', [AppointmentController::class, 'show']);
-//Route::delete('/appointments/{id}', [AppointmentController::class, 'destroy'])->name('appointments.destroy');
+Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
+Route::get('appointments/{appointment}', [AppointmentController::class, 'show']);
+Route::get('/appointments/create-appointment', [AppointmentController::class, 'create'])->name('appointments.create');
+Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+Route::get('/appointments/{id}/edit', [AppointmentController::class, 'edit'])->name('appointments.edit');
+Route::get('appointments/{appointment}', [AppointmentController::class, 'show']);
+Route::delete('/appointments/{id}', [AppointmentController::class, 'destroy'])->name('appointments.destroy');
 
 
 
