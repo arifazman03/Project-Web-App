@@ -32,9 +32,7 @@
         <!--patient table -->
 
         <!-- Add Patient Button -->
-        <div class="col-md-12 text-right m-3">
-        <a href="{{ route('patients.create') }}" class="btn btn-primary mb-3">Add Patient</a>
-        </div>
+
         <table class="table" style="font-size: 18px;">
             <thead class="table-gray">
                 <tr>
@@ -72,6 +70,10 @@
                 @endforeach
             </tbody>
         </table>
+
+        <div class="col-md-12 text-right m-3">
+            <a href="{{ route('patients.create') }}" class="btn btn-primary mb-3">Add Patient</a>
+            </div>
 </main>
 
 @endsection
