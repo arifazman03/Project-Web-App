@@ -286,8 +286,18 @@ update the record and delete the records.
 
 ## 6.4 Appointment Scheduling Page 
 
-## 6.5 Billing and Payment Page 
+## 6.5 Billing and Invoice Page
+a. Create invoice page
+    Admin can select patient name from patient table to create a new invoice after they receive treatment or medication from the hospital
+![createinvoice1](https://github.com/user-attachments/assets/33c6a47f-c766-4899-9eab-be467cdf121c)
+![createinvoice2](https://github.com/user-attachments/assets/d4b7f514-f75a-44ed-a49e-b8173ac748de)
 
+b. Read invoice page
+    The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
+c. Update invoice page
+    Admin can update or edit the existing invoice with the latest information that need to be updated.
+d. Delete invoice page
+    Admin can directly delete the invoice from the billing list instead of delete it on the myphpadmin database.
 ## 6.6 Medical Records Page 
 
 ## 6.7 Doctor Management Page
