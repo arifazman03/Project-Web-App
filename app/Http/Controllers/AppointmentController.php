@@ -53,12 +53,13 @@ public function store(Request $request)
     \Log::info('Appointment Data:', $request->all());
 
 }
-public function edit(Appointment $appointment)
+public function edit($id)
 {
+    $appointment = Appointment::findOrFail($id);
     return view('edit-appointment', compact('appointment'));
 }
 
-public function update(Request $request, Appointment $appointment)
+public function update(Request $request, $id)
     {
         $request->validate([
             'appointment_id',
