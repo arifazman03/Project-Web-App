@@ -226,13 +226,13 @@ After clicking the "Trashbin" button, tthe administrator will be prompt to cofir
 
 
 ## 5.4 Appointment Scheduling Page
-![add appointment-fatnin](https://github.com/user-attachments/assets/c482bac3-2635-48de-bf68-0b651e3595aa)
+![create app](https://github.com/user-attachments/assets/20fae80d-71c1-4701-bb9d-4542cb4bec9c)
 
-![view appointmnet-fatnin](https://github.com/user-attachments/assets/2543f760-6c76-4d18-8676-ac55e9b9aa9b)
+![add-appointment](https://github.com/user-attachments/assets/7f6360f1-9460-4ef8-88da-7e5f83da75dc)
 
-![update appointment-fatnin](https://github.com/user-attachments/assets/1a84d703-af0c-4cea-b4e2-6044e9eb0889)
+![Appointment list](https://github.com/user-attachments/assets/156b18d6-10f5-44b4-b709-4bb781db4eff)
 
-![delete appointment-fatnin](https://github.com/user-attachments/assets/cdb91c5d-9df7-4bb3-8fe1-d4fefde383a0)
+![update app](https://github.com/user-attachments/assets/aec9bd4c-3c6e-40ad-a02c-a0da9becaf9e)
 
 
 Admin of the hospital can input the details of the appointment through appointment record.
