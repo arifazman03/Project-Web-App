@@ -27,7 +27,7 @@
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-0">
                         <span>Appointment</span>
-                        <h2></h2>
+                        <h2>Book Appointment</h2>
                     </div>
                 </div>
             </div>
