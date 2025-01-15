@@ -69,7 +69,7 @@ public function update(Request $request, $id)
             'appointment_time',
             ]);
 
-        $appointment->update($validated);
+        $appointment->update;
         return redirect()->route('appointments.index')->with('success', 'Appointment updated successfully.');
     }
 
