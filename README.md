@@ -262,14 +262,15 @@ The billing list have 3 actions that admin can perform which is view or read the
 
 ![read-invoice2](https://github.com/user-attachments/assets/30efc016-55d1-4598-be20-c1af324cd0a2)
 
+Admin can also directly print the invoice from this page.
+
 c. Update invoice page
     
 Admin can update or edit the existing invoice with the latest information that need to be updated.
 
-![editinvoice1](https://github.com/user-attachments/assets/5965b021-bc62-4687-8d63-dd430b3c2c2b)
+![edit-invoice1](https://github.com/user-attachments/assets/61e8571f-9c73-4785-b1f1-b0130b1202ca)
 
-![editinvoice2](https://github.com/user-attachments/assets/264b162d-8804-4409-9244-7ae445bbb553)
-Example by
+![edit-invoice2](https://github.com/user-attachments/assets/d6618a2c-fe6b-4969-962e-2a86eeecb41d)
 
 ![edit-invoicc2](https://github.com/user-attachments/assets/5c31d68f-9f37-43ee-add0-f4e77301b765)
 
