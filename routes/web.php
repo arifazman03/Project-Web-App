@@ -45,3 +45,10 @@ Route::post('/patients', [PatientController::class, 'store'])->name('patients.st
 Route::get('/patients/{id}/edit', [PatientController::class, 'edit'])->name('patients.edit');
 Route::put('/patients/{id}', [PatientController::class, 'update'])->name('patients.update');
 Route::delete('/patients/{id}', [PatientController::class, 'destroy'])->name('patients.destroy');
+<<<<<<< HEAD
+
+
+
+=======
+Route::get('/patients/search', [PatientController::class, 'search'])->name('patients.search');
+>>>>>>> main
