@@ -24,13 +24,13 @@
             <!-- Section Tittle -->
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <div class="section-tittle text-center mb-0">
-
+                    <div class="section-tittle text-center mb-100">
+                        <h2>Fill in appointment details</h2>
                     </div>
                 </div>
             </div>
             <div>
-                <h2>Fill in appointment details</h2>
+
             </div>
             <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
 
