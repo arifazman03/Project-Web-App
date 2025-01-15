@@ -53,6 +53,8 @@
             </div>
         </div>
     </div>
+    <div class="col-md-12 text-right">
+        <button type="submit" class="btn btn-primary">Save</button>
     <!-- Team End -->
     </main>
 
