@@ -74,6 +74,11 @@
                                 <a href="{{ route('invoice.show', $invoice->id) }}" class="text-info" title="View Invoice">👁</a>
                                 <a href="{{ route('invoice.edit', $invoice->id) }}" class="text-info" title="Edit Invoice">✏</a>
                                 <a href="#" class="text-danger delete-invoice" data-id="{{ $invoice->id }}" title="Delete Invoice">🗑</a>
+                          
+                                <form id="delete-form-{{ $invoice->id }}" action="{{ route('invoice.destroy', $invoice->id) }}" method="POST" style="display: none;">
+                                    @csrf
+                                    @method('DELETE')
+                                </form>
                             </td>
                         </tr>
                         @endforeach
@@ -212,7 +217,8 @@
 </style>
 
 <script>
-   document.addEventListener('DOMContentLoaded', function () {
+
+    document.addEventListener('DOMContentLoaded', function () {
     const deleteButtons = document.querySelectorAll('.delete-invoice');
 
     deleteButtons.forEach(button => {
@@ -246,7 +252,8 @@
             }
         });
     });
-});
+    });
+
 
 </script>
 
