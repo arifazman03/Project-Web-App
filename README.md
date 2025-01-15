@@ -344,3 +344,8 @@ Skipping the database migration prevents changes from reflecting in the database
 ## 6.7 Doctor Management Page
 
 ## 6.8 Pharmacy Management Page 
+![PharmacyView](https://github.com/user-attachments/assets/c131b4b6-3141-46db-87cf-f59aff4dc4dd)
+
+![PharmacyAdd](https://github.com/user-attachments/assets/bb58463f-760a-4b72-a7c9-814e4afe0241)
+
+![PharmacyUpdate](https://github.com/user-attachments/assets/381a1cf8-08dd-4c48-aba5-cb3beb10fa54)
