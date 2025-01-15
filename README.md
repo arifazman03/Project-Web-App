@@ -293,6 +293,9 @@ update the record and delete the records.
 ## 6.3 Patient Registration Page 
 
 ## 6.4 Appointment Scheduling Page 
+### 1. Undefined Variables Due to Typos
+Typos in route names ($appointment to $appointments) lead to undefined variable errors.
+
 
 ## 6.5 Billing and Invoice Page
 
