@@ -229,19 +229,20 @@ Admins is allowed to add, view, update or delete appointment details.
 
 ## 5.5 Billing and Payment Page
 
-![Create invoice - ain](https://github.com/user-attachments/assets/36ab541a-9a31-4e6c-a766-d2d1a063b422)
+a. Create invoice page
+    Admin can select patient name from patient table to create a new invoice after they receive treatment or medication from the hospital
+![createinvoice1](https://github.com/user-attachments/assets/33c6a47f-c766-4899-9eab-be467cdf121c)
+![createinvoice2](https://github.com/user-attachments/assets/d4b7f514-f75a-44ed-a49e-b8173ac748de)
 
-![Billing list - ain](https://github.com/user-attachments/assets/c3aa6b8c-4659-4b3b-9259-a45bf1305dad)
-
-![view invoice - ain](https://github.com/user-attachments/assets/8109fd61-8b67-48c2-835f-52b96b6225d5)
-
-![update invoice - ain](https://github.com/user-attachments/assets/d52f3cee-482e-4783-a7c9-0c61e1ad0917)
-
-![delete invoice - ain](https://github.com/user-attachments/assets/bc381f31-b89b-4193-b285-8759e047432f)
-
-
-The Billing and Invoice section will display the billing list of the patients and their payment status. 
-Admin is allowed to create a new invoice, view and update the existing invoice and delete invoice.
+b. Read invoice page
+    The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
+![billinglist](https://github.com/user-attachments/assets/020bb758-74ce-4448-b105-8c335ccb7e67)
+![showinvoice1](https://github.com/user-attachments/assets/b22cbeb7-9338-44ca-a3ad-07c5a6ffdb29)
+![showinvoice2](https://github.com/user-attachments/assets/5adcdbba-f7c6-412f-bc5b-5bbf7c04ed31)
+c. Update invoice page
+    Admin can update or edit the existing invoice with the latest information that need to be updated.
+d. Delete invoice page
+    Admin can directly delete the invoice from the billing list instead of delete it on the myphpadmin database.
 
 ## 5.6 Medical Records Page
 
@@ -286,7 +287,7 @@ update the record and delete the records.
 
 ## 6.4 Appointment Scheduling Page 
 
-## 6.5 Billing and Payment Page 
+## 6.5 Billing and Invoice Page
 
 ## 6.6 Medical Records Page 
 
