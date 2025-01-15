@@ -31,13 +31,7 @@ public function create(){
 }
 public function store(Request $request)
 {
-    $validated = $request->validate([
-        'appointment_id' => 'required',
-        'patient_id' => 'required',
-        'doctor_id' => 'required',
-        'appointment_date' => 'required|date',
-        'appointment_time' => 'required',
-    ]);
+
 
     $appointment = new Appointment();
         $appointment->appointment_id = $request->appointment_id;
