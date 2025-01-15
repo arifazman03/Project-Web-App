@@ -226,13 +226,15 @@ After clicking the "Trashbin" button, tthe administrator will be prompt to cofir
 
 
 ## 5.4 Appointment Scheduling Page
-![create app](https://github.com/user-attachments/assets/20fae80d-71c1-4701-bb9d-4542cb4bec9c)
 
 ![add-appointment](https://github.com/user-attachments/assets/7f6360f1-9460-4ef8-88da-7e5f83da75dc)
+Admin can input the details of the appointment through appointment record.
 
 ![Appointment list](https://github.com/user-attachments/assets/156b18d6-10f5-44b4-b709-4bb781db4eff)
+Admin can view the list of appointments. 
 
 ![update app](https://github.com/user-attachments/assets/aec9bd4c-3c6e-40ad-a02c-a0da9becaf9e)
+Admin can update the appointments details. 
 
 
 Admin of the hospital can input the details of the appointment through appointment record.
