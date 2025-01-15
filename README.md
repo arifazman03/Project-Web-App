@@ -253,7 +253,7 @@ d. Delete invoice page
 
 ## 5.6 Medical Records Page
 
-![medical records - adlyn](https://github.com/user-attachments/assets/708479e8-81de-45aa-97e3-e628f7a81f77)
+![m1](https://github.com/user-attachments/assets/3f6f8ff4-0189-48c5-bf9b-536cdb627ae4)
 
 ![create - adlyn](https://github.com/user-attachments/assets/9f70c2b3-60ce-48b5-9828-e39a467a6ed3)
 
