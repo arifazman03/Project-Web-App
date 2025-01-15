@@ -241,6 +241,10 @@ b. Read invoice page
 ![showinvoice2](https://github.com/user-attachments/assets/5adcdbba-f7c6-412f-bc5b-5bbf7c04ed31)
 c. Update invoice page
     Admin can update or edit the existing invoice with the latest information that need to be updated.
+![editinvoice1](https://github.com/user-attachments/assets/74d95293-78e9-499d-b3ff-2d6f1100e026)
+![editinvoice2](https://github.com/user-attachments/assets/c01cfa03-61bb-4b61-b359-f7f86ef8856c)
+![billinglist1](https://github.com/user-attachments/assets/c703178d-60f7-4a8e-9faf-67f3b7ca68e7)
+Updated billing list will be shown after the admin click the update invoice button
 d. Delete invoice page
     Admin can directly delete the invoice from the billing list instead of delete it on the myphpadmin database.
 
