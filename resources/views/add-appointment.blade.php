@@ -61,7 +61,7 @@
                     <td>{{$appointment->appointment_time}}</td>
 
                     <td>
-                        <form action="{{ route('appointment.destroy', $appointment->id) }}" method="POST" id="delete-form-{{ $appointment->id }}" style="display: none;">
+                        <form action="{{ route('appointments.destroy', $appointment->id) }}" method="POST" id="delete-form-{{ $appointment->id }}" style="display: none;">
                             @csrf
                             @method('DELETE')
                         </form>
