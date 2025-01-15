@@ -24,7 +24,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
-                        <h3>Fill in appointment details</h3>
+                        <h2>Fill in appointment details</h2>
                     </div>
                 </div>
             </div>
