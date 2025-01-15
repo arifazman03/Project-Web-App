@@ -187,16 +187,18 @@ Key Features:
 # 5. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION
 
 ## 5.1 Authentication Page
+![RegisterView](https://github.com/user-attachments/assets/d98adb6f-7314-4644-9678-d6fe96507879)
 
-![Authentication Page](https://github.com/user-attachments/assets/c6953c87-606c-4c39-ba51-097805ad73fa)
 
 This page requires the admin to enter their username and password to login into the system
 to register patient,update appointment and etc.
 
 ## 5.2 Home Page
+![Homepage1](https://github.com/user-attachments/assets/7452de55-939a-4ce7-9afb-18b727fb0c2e)
 
-![HOME - sultan (2)](https://github.com/user-attachments/assets/081c2262-06b5-4d2f-b94c-2d2014cabc61)
+![Homepage2](https://github.com/user-attachments/assets/1c25adce-8437-4ac3-b6f7-40a1b6f04a62)
 
+![HomepageFooter](https://github.com/user-attachments/assets/74690b36-5978-4c94-a971-df43b754d9fd)
 
 Admins could see the Homepage of the system with navigation bar on top of the page with
 selection of menu such as doctors,appointment,invoice,pharmacy and etc.
@@ -205,7 +207,7 @@ selection of menu such as doctors,appointment,invoice,pharmacy and etc.
 
 ![patient](https://github.com/user-attachments/assets/5c5f2cd8-866a-4974-9eee-5a1a8907af36)
 
-This page will show the user/administrator the patient list, registeration and administrator can manage the list by CRUD operation.
+This page will show the user/administrator the patient list, registration and administrator can manage the list by CRUD operation.
 User/administrator of the hospital can input the details of the patient. Click submit button to create a new patient record. 
 "Pencil" icon is for Edit and "Trashbin" icon is for delete.
 
@@ -250,23 +252,34 @@ b. Read invoice page
     
 The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
 
-![billinglist1](https://github.com/user-attachments/assets/c703178d-60f7-4a8e-9faf-67f3b7ca68e7)
+![billing-list1](https://github.com/user-attachments/assets/15c4fe4f-b8b0-4c26-a12d-02d82f889a81)
 
-![billing-list2](https://github.com/user-attachments/assets/b3102c8a-fd95-4b28-b88e-7438fbb80c17)
+![billing-list2](https://github.com/user-attachments/assets/20e3a934-431f-4b97-927d-36082415695a)
 
-![showinvoice1](https://github.com/user-attachments/assets/b22cbeb7-9338-44ca-a3ad-07c5a6ffdb29)
+![read-invoice1](https://github.com/user-attachments/assets/09b9e6e2-6761-40c7-b20a-180db9528e04)
 
-![showinvoice2](https://github.com/user-attachments/assets/5adcdbba-f7c6-412f-bc5b-5bbf7c04ed31)
+![read-invoice2](https://github.com/user-attachments/assets/30efc016-55d1-4598-be20-c1af324cd0a2)
 
 c. Update invoice page
     
 Admin can update or edit the existing invoice with the latest information that need to be updated.
+
 ![editinvoice1](https://github.com/user-attachments/assets/74d95293-78e9-499d-b3ff-2d6f1100e026)
+
 ![editinvoice2](https://github.com/user-attachments/assets/c01cfa03-61bb-4b61-b359-f7f86ef8856c)
+
 ![billinglist1](https://github.com/user-attachments/assets/c703178d-60f7-4a8e-9faf-67f3b7ca68e7)
+
 Updated billing list will be shown after the admin click the update invoice button
 d. Delete invoice page
-    Admin can directly delete the invoice from the billing list instead of delete it on the myphpadmin database.
+
+Admin can directly delete the invoice from the billing list by clicking the "trash bin" icon instead of delete it on the myphpadmin database.
+
+![delete-invoice1](https://github.com/user-attachments/assets/36036150-2617-4a8b-a116-07f05b0bc4ee)
+    
+![delete-invoice2](https://github.com/user-attachments/assets/7ea59c37-3326-4e48-96d9-c122e2e70db0)
+
+![delete-invoice3](https://github.com/user-attachments/assets/476987d0-d2c6-44e3-a701-85b1023cb62b)
 
 ## 5.6 Medical Records Page
 
@@ -337,15 +350,29 @@ update the record and delete the records.
 # 6. CHALLENGES/DIFFICULTIES IN DEVELOPING THE APPLICATION
 
 ## 6.1 Authentication Page 
+### 1. Login Redirection Issues
+After successful login, users were not redirected to the correct dashboard, causing confusion and requiring manual navigation.
+
+***Solution***: Ensure correct redirection by setting the intended URL using Laravel’s redirect()->intended('/dashboard') method.
+
+### 2. 4. CSRF Token Mismatch Errors
+Users encountered "CSRF token mismatch" errors during login and registration due to expired or missing tokens.
+
+***Solution***: Ensure that @csrf is included in all authentication forms and handle token expiration properly.
 
 ## 6.2 Home Page
+### 1. Design Consistency
+
+Ensuring the layout, colors, and typography are visually appealing and consistent across the page.
+
+***Solution***: Use a design system or CSS framework like Bootstrap or Tailwind CSS.
 
 ## 6.3 Patient Registration Page 
 ### 1.Unable to view the views/interface at the browser.
 
 **Solution** Download Git and make sure the project's file is cloned inside the xampp/htdocs folder.
 
-###2.some errors with the database
+### 2.some errors with the database
 
 ***Solution*** Use the command ``` php artisan migrate:fresh ``` to drop all the table and migrate it again.
 
@@ -355,6 +382,15 @@ Typos in route names ($appointment to $appointments) lead to undefined variable 
 
 
 ## 6.5 Billing and Invoice Page
+### 1. Incorrect Calculation of VAT and Total Amount
+Errors in VAT and subtotal calculations led to incorrect final billing amounts, causing discrepancies in invoices.
+
+***Solution***: Ensure proper formula implementation for VAT and total amount calculations and validate inputs before processing.
+
+### 2. Payment Status Not Updating
+The payment status (PAID or UNPAID) did not update correctly after completing a transaction, leading to confusion in invoice tracking.
+
+***Solution***: Implement proper event listeners or database triggers to update the payment status upon successful payment confirmation.
 
 ## 6.6 Medical Records Page 
 ### 1. Undefined Variables Due to Typos
@@ -368,6 +404,14 @@ Skipping the database migration prevents changes from reflecting in the database
 **Solution:** Always run php artisan migrate after making database changes.
 
 ## 6.7 Doctor Management Page
+### 1. 404 Page not found
+Error occurred due to improper routing in web.php or incorrect href attribute. 
+
+### 2. 419 Page expired
+Error occurred due to issues such as typographical errors, incomplete HTML structure, or improper closure of code elements.
+
+### 3. Undefined Variable
+Error occurred due to an undefined variable doctor that caused by failure to properly pass or initialize the variable in the controller or view.
 
 ## 6.8 Pharmacy Management Page 
 ### 1. Undefined Variables Due to Typos
