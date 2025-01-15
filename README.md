@@ -230,14 +230,24 @@ Admins is allowed to add, view, update or delete appointment details.
 ## 5.5 Billing and Payment Page
 
 a. Create invoice page
-    Admin can select patient name from patient table to create a new invoice after they receive treatment or medication from the hospital
+    
+Admin can select patient name from patient table to create a new invoice after they receive treatment or medication from the hospital
 ![createinvoice1](https://github.com/user-attachments/assets/33c6a47f-c766-4899-9eab-be467cdf121c)
 ![createinvoice2](https://github.com/user-attachments/assets/d4b7f514-f75a-44ed-a49e-b8173ac748de)
 
 b. Read invoice page
-    The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
+    
+The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
+![billinglist](https://github.com/user-attachments/assets/020bb758-74ce-4448-b105-8c335ccb7e67)
+![showinvoice1](https://github.com/user-attachments/assets/b22cbeb7-9338-44ca-a3ad-07c5a6ffdb29)
+![showinvoice2](https://github.com/user-attachments/assets/5adcdbba-f7c6-412f-bc5b-5bbf7c04ed31)
 c. Update invoice page
-    Admin can update or edit the existing invoice with the latest information that need to be updated.
+    
+Admin can update or edit the existing invoice with the latest information that need to be updated.
+![editinvoice1](https://github.com/user-attachments/assets/74d95293-78e9-499d-b3ff-2d6f1100e026)
+![editinvoice2](https://github.com/user-attachments/assets/c01cfa03-61bb-4b61-b359-f7f86ef8856c)
+![billinglist1](https://github.com/user-attachments/assets/c703178d-60f7-4a8e-9faf-67f3b7ca68e7)
+Updated billing list will be shown after the admin click the update invoice button
 d. Delete invoice page
     Admin can directly delete the invoice from the billing list instead of delete it on the myphpadmin database.
 

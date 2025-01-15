@@ -25,18 +25,20 @@
             <!-- Section Tittle -->
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <div class="section-tittle text-center mb-0">
+                    <div class="section-tittle text-center mb-100">
                         <span>Appointment</span>
-                        <h2></h2>
+                        <h2>Book Appointment</h2>
                     </div>
                 </div>
             </div>
-            <div class="text-end">
+            <div class="col-md-12 text-right m-3">
+                <a class="btn" href="{{ route('appointments.create') }}" role="button">Add Appointment</a>
 
-    <a href="{{ route('appointments.create') }}" class="btn btn-primary mb-3">Add Appointment</a>
 
-    <table class="table ">
-        <thead class="table-gray">
+
+                <table class="table" style="font-size: 18px;">
+                    <thead class="table-gray">
+
             <tr>
                 <th scope ="col">Appointment ID</th>
                 <th scope ="col">Patient ID</th>
