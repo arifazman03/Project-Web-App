@@ -255,15 +255,40 @@ d. Delete invoice page
 
 ![medical](https://github.com/user-attachments/assets/c2e8d3d2-ba20-43b3-a0e5-d63fc3c83ac7)
 
+
+This is the medical page. User can navigate to all departments (Dentistry, Cardiology, ENT Specialist, Orthopaedic, Pulmonology, and Blood Screening).
+If user wants to view record, simply click on the 'View Record' button.
+
+
 ![view-medical](https://github.com/user-attachments/assets/6fbede11-448e-441b-8f2a-33f22997ed33)
+
+
+The page will navigate to the Dentistry records. If user wants to add a new record, simply click on the 'Add Record' button. We already added 10 records for the Dentistry Department.
+
 
 ![edit-medical](https://github.com/user-attachments/assets/f73c6c5e-1270-494c-a902-ab9e73e70124)
 
+
+To edit the record, simply click on the pencil icon under the Action column. User can simply edit the record by filling in the form. For this example, we want to edit the doctor's name.
+
+
 ![editted-medical](https://github.com/user-attachments/assets/4a904339-1b37-459f-ba9f-7c43b3d91025)
+
+
+User successfully editted the doctor's name.
+
 
 ![delete-medical](https://github.com/user-attachments/assets/0803c315-781b-425f-ba6c-d8cf1fee6319)
 
+
+To delete the record, simply click on the trash can icon under the Action column. A pop-up message will appear to ask user for the clarification before deleting the record. In this example, we want to delete record 10.
+
+
 ![deleted-medical](https://github.com/user-attachments/assets/e08d5698-159c-4658-8ea6-2694a744c42b)
+
+
+Record 10 successfully deleted. 
+
 
 
 ## 5.7 Doctor Management Page
