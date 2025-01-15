@@ -52,7 +52,7 @@
 
         </thead>
         <tbody>
-            @foreach ($appointments as $appointments)
+            @foreach ($appointments as $appointment)
                 <tr>
                     <td>{{$appointment->appointment_id}}</td>
                     <td>{{$appointment->patient_id}}</td>
