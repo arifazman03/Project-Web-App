@@ -79,5 +79,24 @@
 
     <!-- Team End -->
     </main>
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.delete-appointment').forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default link behavior
+
+                const doctorId = this.getAttribute('data-id'); // Get doctor ID from data-id attribute
+
+                const form = document.getElementById('delete-form-' + appointmentId); // Get the form by ID
+                form.submit(); // Submit the form
+
+            });
+        });
+    });
+</script>
 
 @endsection
+
+
+
