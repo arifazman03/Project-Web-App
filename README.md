@@ -22,15 +22,15 @@
   ------------------------------------------------- ---------------------
   ADLYN SOFEA BINTI MOHD ARIFF ADIKA                   (2214042)             Medical Page
 
-  NUR FATNIN IZZATI BINTI SIDIK                        (2110294)
+  NUR FATNIN IZZATI BINTI SIDIK                        (2110294)            Appointment Page
 
-  WAN MUHAMMAD ARIF BIN WAN AZMAN                      (2212119)
+  WAN MUHAMMAD ARIF BIN WAN AZMAN                      (2212119)            Doctors Page
 
-  MUHAMMAD FIRDAUS BIN ZAINI                           (2217753)
+  MUHAMMAD FIRDAUS BIN ZAINI                           (2217753)            Patient Page
 
-  NURAIN IZZATI BINTI ABD RAUF                         (2217978)
+  NURAIN IZZATI BINTI ABD RAUF                         (2217978)            Billing Page
 
-  SULTAN ARIFFIN BIN KAMAL                             (2218433)
+  SULTAN ARIFFIN BIN KAMAL                             (2218433)            Pharmacy,Register Page
   
   -----------------------------------------------------------------------
 
