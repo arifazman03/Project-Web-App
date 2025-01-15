@@ -36,37 +36,37 @@
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
                                 <label for="doctor_id" class="form-label">Doctor ID</label>
-                              <input type="text" name="doctor_id" class="form-control" id="doctor_id" value="{{ $doctor->doctor_id }}" required>
+                              <input type="text" name="doctor_id" class="form-control" id="doctor_id" value="{{ $doctor->doctor_id }}" style="font-size: 18px;" required>
                             </div>
                           </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="doctor_name" class="form-label">Doctor Name</label>
-                          <input type="text" name="doctor_name" class="form-control" id="doctor_name" value="{{ $doctor->doctor_name }}" required>
+                          <input type="text" name="doctor_name" class="form-control" id="doctor_name" value="{{ $doctor->doctor_name }}" style="font-size: 18px;" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="department" class="form-label">Department</label>
-                          <input type="text" name="department" class="form-control" id="department" value="{{ $doctor->department }}" required>
+                          <input type="text" name="department" class="form-control" id="department" value="{{ $doctor->department }}" style="font-size: 18px;" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="email_address" class="form-label">Email Address</label>
-                          <input type="email" name="email_address" class="form-control" id="email_address" value="{{ $doctor->email_address }}" required>
+                          <input type="email" name="email_address" class="form-control" id="email_address" value="{{ $doctor->email_address }}" style="font-size: 18px;" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="schedule" class="form-label">Schedule</label>
-                          <input type="text" name="schedule" class="form-control" id="schedule" value="{{ $doctor->schedule }}" required>
+                          <input type="text" name="schedule" class="form-control" id="schedule" value="{{ $doctor->schedule }}" style="font-size: 18px;" required>
                         </div>
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="contact_no" class="form-label">Contact No</label>
-                          <input type="text" name="contact_no" class="form-control" id="contact_no" value="{{ $doctor->contact_no }}" required>
+                          <input type="text" name="contact_no" class="form-control" id="contact_no" value="{{ $doctor->contact_no }}" style="font-size: 18px;" required>
                         </div>
                       </div>
                       <div class="col-md-12 text-right">

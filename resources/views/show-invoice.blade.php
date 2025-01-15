@@ -1,7 +1,6 @@
 @extends('master.layout')
 @section('content')
-<!DOCTYPE html>
-<div class="container" style="max-width: 800px; margin: auto; padding: 20px;">
+<div id="invoice-section" class="container" style="max-width: 800px; margin: auto; padding: 20px;">
     <!-- Invoice Header Section -->
     <header style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px;">
         <div class="logo">
@@ -78,75 +77,41 @@
         </span>
     </p>
 
-    <!-- Buttons Section -->
     <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
-        <button type="button" class="btn" style="background-color: #007bff; color: white; font-size: 16px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="printInvoice()">Print</button>
+        <button type="button" id="printButton" class="btn" style="background-color: #007bff; color: white; font-size: 16px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Print</button>
         <a href="{{ route('billing-list') }}" class="btn" style="background-color: #007bff; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block;">Back to Billing List</a>
     </div>
 </div>
-@endsection
 
 <script>
-    function printInvoice() {
-        // Get the invoice section
-        const invoiceContent = document.getElementById('invoice-section').outerHTML;
-
-        // Open a new window for printing
-        const printWindow = window.open('', '', 'width=800,height=600');
-
-        // Add the invoice content to the print window, including header
-        printWindow.document.write(`
-            <html>
-                <head>
-                    <title>Print Invoice</title>
-                    <style>
-                        body { font-family: Arial, sans-serif; margin: 20px; }
-                        header { text-align: center; margin-bottom: 20px; }
-                        header .header { display: flex; justify-content: space-between; }
-                        header .logo img { height: 60px; }
-                        header .contact-info { text-align: right; }
-                        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-                        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-                        th { background-color: #f4f4f4; }
-                        .text-success { color: green; }
-                        .text-danger { color: red; }
-                    </style>
-                </head>
-                <body>
-                    <!-- Print Custom Header -->
-                    <header>
-                        <div class="header">
-                            <!-- Logo Section -->
-                            <div class="logo" style="text-align: left;">
-                                <a href="{{ url('/') }}">
-                                    <img src="{{ asset('assets/img/logo/logo.png') }}" alt="Medical Logo" class="h-16" style="height: 60px;">
-                                </a>
-                                <span>Medical.</span>
-                            </div>
-
-                            <!-- Contact Information Section -->
-                            <div class="contact-info" style="text-align: right;">
-                                <p><strong>Hospital Kuala Lumpur</strong></p>
-                                <p>No. 123, Jalan Kesihatan, 50450 Kuala Lumpur, Malaysia</p>
-                                <p>+60 3-1234-5678</p>
-                                <p>billinghkl@moh.gov.my</p>
-                            </div>
-                        </div>
-                        <h1 style="text-align: center;">Invoice Details</h1>
-                    </header>
-                    <!-- Print Invoice Content -->
-                    ${invoiceContent}
-                </body>
-            </html>
-        `);
-
-        // Close the document stream
-        printWindow.document.close();
-
-        // Trigger the print dialog
-        printWindow.print();
-
-        // Close the print window after printing
-        printWindow.onafterprint = () => printWindow.close();
+    // Define the print function at the bottom of your content section
+    const printButton = document.getElementById('printButton');
+    if (printButton) {
+        printButton.addEventListener('click', function() {
+            const content = document.getElementById('invoice-section').innerHTML;
+            const w = window.open();
+            w.document.write(`
+                <html>
+                    <head>
+                        <style>
+                            body { font-family: Arial; padding: 20px; }
+                            .btn { display: none; }
+                            table { width: 100%; border-collapse: collapse; }
+                            th, td { border: 1px solid #ccc; padding: 8px; }
+                        </style>
+                    </head>
+                    <body>${content}</body>
+                </html>
+            `);
+            w.document.close();
+            w.focus();
+            setTimeout(() => {
+                w.print();
+                w.onafterprint = function() {
+                    w.close();
+                };
+            }, 250);
+        });
     }
-</script>
+    </script>
+@endsection
