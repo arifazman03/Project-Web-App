@@ -9,6 +9,8 @@
                 <div class="row">
                 <div class="col-xl-12">
                     <div class="hero-cap hero-cap2 text-center">
+                        <span>Add Appointment</span>
+
                         <h2>Appointment</h2>
                     </div>
                 </div>
