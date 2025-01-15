@@ -249,9 +249,15 @@ Admin can select patient name from patient table to create a new invoice after t
 b. Read invoice page
     
 The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
-![billinglist](https://github.com/user-attachments/assets/020bb758-74ce-4448-b105-8c335ccb7e67)
+
+![billinglist1](https://github.com/user-attachments/assets/c703178d-60f7-4a8e-9faf-67f3b7ca68e7)
+
+![billing-list2](https://github.com/user-attachments/assets/b3102c8a-fd95-4b28-b88e-7438fbb80c17)
+
 ![showinvoice1](https://github.com/user-attachments/assets/b22cbeb7-9338-44ca-a3ad-07c5a6ffdb29)
+
 ![showinvoice2](https://github.com/user-attachments/assets/5adcdbba-f7c6-412f-bc5b-5bbf7c04ed31)
+
 c. Update invoice page
     
 Admin can update or edit the existing invoice with the latest information that need to be updated.
