@@ -223,9 +223,6 @@ The Patient ID cannot be change is it is the primary key for the patient records
 After clicking the "Trashbin" button, tthe administrator will be prompt to cofirm the deletion action of the patient's records.
 
 
-This page will show the user/administrator the patient list, registeration and administrator can manage the list by CRUD operation.
-User/administrator of the hospital can input the details of the patient. Click submit button to create a new patient record.
-
 ## 5.4 Appointment Scheduling Page
 ![add appointment-fatnin](https://github.com/user-attachments/assets/c482bac3-2635-48de-bf68-0b651e3595aa)
 
