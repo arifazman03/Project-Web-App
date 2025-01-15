@@ -34,7 +34,9 @@
                 </div>
             </div>
 
-
+            <div class="col-md-12 text-right m-3">
+                <a class="btn" href="{{ route('appointments.create') }}" role="button">Add appointment</a>
+            </div>
 
                 <table class="table" style="font-size: 18px;">
                     <thead class="table-gray">
@@ -49,6 +51,26 @@
             </tr>
 
         </thead>
+        <tbody>
+            @foreach ($appointments as $appointments)
+                <tr>
+                    <td>{{$appointment->appointment_id}}</td>
+                    <td>{{$appointment->patient_id}}</td>
+                    <td>{{$dappointment->doctor_id}}</td>
+                    <td>{{$appointment->appointment_date}}</td>
+                    <td>{{$appointment->appointment_time}}</td>
+
+                    <td>
+                        <form action="{{ route('appointment.destroy', $appointment->id) }}" method="POST" id="delete-form-{{ $appointment->id }}" style="display: none;">
+                            @csrf
+                            @method('DELETE')
+                        </form>
+                        <a class="text-primary" href="{{ route('appointments.edit', $appointment->id) }}">✏️</a>
+                        <a href="#" class="text-danger delete-appointment" data-id="{{ $appointment->id }}" title="Delete Appointment">🗑️</a>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
                   </table>
             </div>
         </div>
