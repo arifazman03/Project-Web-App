@@ -187,16 +187,18 @@ Key Features:
 # 5. PROJECT SYSTEM CAPTURED SCREEN AND EXPLANATION
 
 ## 5.1 Authentication Page
+![RegisterView](https://github.com/user-attachments/assets/d98adb6f-7314-4644-9678-d6fe96507879)
 
-![Authentication Page](https://github.com/user-attachments/assets/c6953c87-606c-4c39-ba51-097805ad73fa)
 
 This page requires the admin to enter their username and password to login into the system
 to register patient,update appointment and etc.
 
 ## 5.2 Home Page
+![Homepage1](https://github.com/user-attachments/assets/7452de55-939a-4ce7-9afb-18b727fb0c2e)
 
-![HOME - sultan (2)](https://github.com/user-attachments/assets/081c2262-06b5-4d2f-b94c-2d2014cabc61)
+![Homepage2](https://github.com/user-attachments/assets/1c25adce-8437-4ac3-b6f7-40a1b6f04a62)
 
+![HomepageFooter](https://github.com/user-attachments/assets/74690b36-5978-4c94-a971-df43b754d9fd)
 
 Admins could see the Homepage of the system with navigation bar on top of the page with
 selection of menu such as doctors,appointment,invoice,pharmacy and etc.
