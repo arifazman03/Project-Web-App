@@ -203,10 +203,24 @@ selection of menu such as doctors,appointment,invoice,pharmacy and etc.
 
 ## 5.3 Patient Registration Page
 
-![Patient-Firdaus](https://github.com/user-attachments/assets/23cdf7e6-2bb3-4df6-8365-6e1ee5de86e5)
-![add-Firdaus](https://github.com/user-attachments/assets/4861a385-0310-4fe2-a500-cc1ae9d62acc)
-![update-Firdaus](https://github.com/user-attachments/assets/24c3d8f3-3208-4a1b-93dc-f4d56efb1ed1)
-![Patient delete-Firdaus](https://github.com/user-attachments/assets/11d050f1-7d95-49fc-bfee-86be50114478)
+![patient](https://github.com/user-attachments/assets/5c5f2cd8-866a-4974-9eee-5a1a8907af36)
+
+This page will show the user/administrator the patient list, registeration and administrator can manage the list by CRUD operation.
+User/administrator of the hospital can input the details of the patient. Click submit button to create a new patient record. 
+"Pencil" icon is for Edit and "Trashbin" icon is for delete.
+
+![add patient](https://github.com/user-attachments/assets/9b864a35-b0c9-4430-a263-b3814e8f5ec3)
+
+The administrator need to fill all the needed information of the patient and click "add patient" button to register new patient records.
+
+![update patient](https://github.com/user-attachments/assets/fe633b96-d085-4a36-a436-2a4ef3cfaf84)
+
+After clicking "Pencil" icon, the administrator will be redirect to this interface to edit or update the patient's information.
+The Patient ID cannot be change is it is the primary key for the patient records.
+
+![delete patient](https://github.com/user-attachments/assets/23b00c63-17a8-4c6b-a1b8-ac2ed1c7cd02)
+
+After clicking the "Trashbin" button, tthe administrator will be prompt to cofirm the deletion action of the patient's records.
 
 
 This page will show the user/administrator the patient list, registeration and administrator can manage the list by CRUD operation.
@@ -322,6 +336,13 @@ update the record and delete the records.
 ## 6.2 Home Page
 
 ## 6.3 Patient Registration Page 
+### 1.Unable to view the views/interface at the browser.
+
+**Solution** Download Git and make sure the project's file is cloned inside the xampp/htdocs folder.
+
+###2.some errors with the database
+
+***Solution*** Use the command ``` php artisan migrate:fresh ``` to drop all the table and migrate it again.
 
 ## 6.4 Appointment Scheduling Page 
 ### 1. Undefined Variables Due to Typos
