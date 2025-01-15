@@ -86,8 +86,9 @@
             element.addEventListener('click', function (e) {
                 e.preventDefault(); // Prevent default link behavior
 
-                const doctorId = this.getAttribute('data-id');
+                const appointmentId = this.getAttribute('data-id');
 
+                if (confirm('Are you sure you want to delete this appointment?')) {
                 const form = document.getElementById('delete-form-' + appointmentId); // Get the form by ID
                 form.submit(); // Submit the form
 
