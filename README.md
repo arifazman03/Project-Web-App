@@ -240,17 +240,19 @@ The Appointment page will display appointment form details on the table such as
 appointment id, doctor id, appointment date, and appointment time.
 Admins is allowed to add, view, update or delete appointment details.
 
-## 5.5 Billing and Payment Page
+## 5.5 Billing and Invoice Page
 
 a. Create invoice page
     
-Admin can select patient name from patient table to create a new invoice after they receive treatment or medication from the hospital
-![createinvoice1](https://github.com/user-attachments/assets/33c6a47f-c766-4899-9eab-be467cdf121c)
-![createinvoice2](https://github.com/user-attachments/assets/d4b7f514-f75a-44ed-a49e-b8173ac748de)
+Admin need to enter patient details to create a new invoice and can mark as "PAID" or "UNPAID"
+
+![createInvoice(1)](https://github.com/user-attachments/assets/047594f4-1096-4f0f-b8e9-6f6d7182ff92)
+
+![createInvoice(2)](https://github.com/user-attachments/assets/2b174f0a-2ae0-4287-9acb-b632392073f2)
 
 b. Read invoice page
     
-The billing list have 3 action that admin can perform which is read/print, update/edit the invoice and delete the invoice. 
+The billing list have 3 actions that admin can perform which is view or read the invoice, update or edit the invoice and delete the invoice. 
 
 ![billing-list1](https://github.com/user-attachments/assets/15c4fe4f-b8b0-4c26-a12d-02d82f889a81)
 
@@ -264,16 +266,20 @@ c. Update invoice page
     
 Admin can update or edit the existing invoice with the latest information that need to be updated.
 
-![editinvoice1](https://github.com/user-attachments/assets/74d95293-78e9-499d-b3ff-2d6f1100e026)
+![editinvoice1](https://github.com/user-attachments/assets/5965b021-bc62-4687-8d63-dd430b3c2c2b)
 
-![editinvoice2](https://github.com/user-attachments/assets/c01cfa03-61bb-4b61-b359-f7f86ef8856c)
+![editinvoice2](https://github.com/user-attachments/assets/264b162d-8804-4409-9244-7ae445bbb553)
+Example by
 
-![billinglist1](https://github.com/user-attachments/assets/c703178d-60f7-4a8e-9faf-67f3b7ca68e7)
+![edit-invoicc2](https://github.com/user-attachments/assets/5c31d68f-9f37-43ee-add0-f4e77301b765)
+
+The message "Invoice updated successfully!" will appear after the button "Update invoice" is clicked.
 
 Updated billing list will be shown after the admin click the update invoice button
+
 d. Delete invoice page
 
-Admin can directly delete the invoice from the billing list by clicking the "trash bin" icon instead of delete it on the myphpadmin database.
+Admin can directly delete the invoice from the billing list by clicking the "trash bin" icon instead of delete it on the myphpadmin database. The dialogue for delete confirmation will appear for confirmation before permanently delete the invoice and if the deletion is successful, there is a dialogue too by informing the invoice successfully deleted.
 
 ![delete-invoice1](https://github.com/user-attachments/assets/36036150-2617-4a8b-a116-07f05b0bc4ee)
     
