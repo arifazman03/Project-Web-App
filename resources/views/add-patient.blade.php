@@ -68,52 +68,7 @@
         <button type="submit" class="btn btn-primary">Add Patient</button>
     </form>
 </div>
-    {{-- <form action="{{ route('patients.store') }}" method="POST">
-        @csrf
-        <div>
-            <label for="patient_id">Patient ID</label>
-            <input type="text" name="patient_id" id="patient_id" value="{{ old('patient_id') }}">
-            @error('patient_id') <span>{{ $message }}</span> @enderror
-        </div>
-        <div>
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name" id="first_name" value="{{ old('first_name') }}">
-            @error('first_name') <span>{{ $message }}</span> @enderror
-        </div>
-        <div>
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" id="last_name" value="{{ old('last_name') }}">
-            @error('last_name') <span>{{ $message }}</span> @enderror
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" value="{{ old('email') }}">
-            @error('email') <span>{{ $message }}</span> @enderror
-        </div>
-        <div>
-            <label for="phone_number">Phone Number</label>
-            <input type="text" name="phone_number" id="phone_number" value="{{ old('phone_number') }}">
-            @error('phone_number') <span>{{ $message }}</span> @enderror
-        </div>
-        <div>
-            <label for="address">Address</label>
-            <input type="text" name="address" id="address" value="{{ old('address') }}">
-            @error('address') <span>{{ $message }}</span> @enderror
-        </div>
-        <div>
-            <label for="gender">Gender</label>
-            <select name="gender" id="gender">
-                <option value="Male" {{ old('gender') == 'Male' ? 'selected' : '' }}>Male</option>
-                <option value="Female" {{ old('gender') == 'Female' ? 'selected' : '' }}>Female</option>
-            </select>
-            @error('gender') <span>{{ $message }}</span> @enderror
-        </div>
-        <div>
-            <label for="date_of_birth">Date of Birth</label>
-            <input type="date" name="date_of_birth" id="date_of_birth" value="{{ old('date_of_birth') }}">
-            @error('date_of_birth') <span>{{ $message }}</span> @enderror
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+
 </main>
+
 @endsection
