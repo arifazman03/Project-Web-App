@@ -237,10 +237,7 @@ Admin can view the list of appointments.
 Admin can update the appointments details. 
 
 
-Admin of the hospital can input the details of the appointment through appointment record.
-The Appointment page will display appointment form details on the table such as
-appointment id, doctor id, appointment date, and appointment time.
-Admins is allowed to add, view, update or delete appointment details.
+
 
 ## 5.5 Billing and Invoice Page
 
