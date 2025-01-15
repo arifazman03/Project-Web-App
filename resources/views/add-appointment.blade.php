@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 text-right m-3">
+
         <td colspan="6" style="text-align: center;">
         <a class="btn" href="{{ route('appointments.create') }}" role="button">Add Appointment</a>
 
