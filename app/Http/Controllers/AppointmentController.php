@@ -25,7 +25,7 @@ public function create(){
 }
 public function store(Request $request)
 {
-    $validated = $request->validate([
+    $request->validate([
         'appointment_id' => 'required',
         'patient_id' => 'required',
         'doctor_id' => 'required',
