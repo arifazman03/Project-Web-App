@@ -18,9 +18,9 @@
 ### PREPARED BY:
 
   -----------------------------------------------------------------------
-  **NAME**                                          **MATRIC NO.**
+  **NAME**                                          **MATRIC NO.**        **CONTRIBUTION** 
   ------------------------------------------------- ---------------------
-  ADLYN SOFEA BINTI MOHD ARIFF ADIKA                   (2214042)
+  ADLYN SOFEA BINTI MOHD ARIFF ADIKA                   (2214042)             Medical Page
 
   NUR FATNIN IZZATI BINTI SIDIK                        (2110294)
 
