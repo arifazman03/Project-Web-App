@@ -366,4 +366,9 @@ Skipping the database migration prevents changes from reflecting in the database
 ## 6.7 Doctor Management Page
 
 ## 6.8 Pharmacy Management Page 
+### 1. Undefined Variables Due to Typos
+    Typos when coding by changing from 'drug' to 'drugs'
+### 2. Connection to PhpmyAdmin
+My data did not updated in the phpmyAdmin database after many tries,after the help of internet,
+I eventually solved it.
 
