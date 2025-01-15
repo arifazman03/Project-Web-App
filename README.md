@@ -253,11 +253,17 @@ d. Delete invoice page
 
 ## 5.6 Medical Records Page
 
-![m1](https://github.com/user-attachments/assets/3f6f8ff4-0189-48c5-bf9b-536cdb627ae4)
+![medical](https://github.com/user-attachments/assets/c2e8d3d2-ba20-43b3-a0e5-d63fc3c83ac7)
 
-![create - adlyn](https://github.com/user-attachments/assets/9f70c2b3-60ce-48b5-9828-e39a467a6ed3)
+![view-medical](https://github.com/user-attachments/assets/6fbede11-448e-441b-8f2a-33f22997ed33)
 
-![read - adlyn](https://github.com/user-attachments/assets/55160f5b-4e0c-4308-8b46-1bd16797223c)
+![edit-medical](https://github.com/user-attachments/assets/f73c6c5e-1270-494c-a902-ab9e73e70124)
+
+![editted-medical](https://github.com/user-attachments/assets/4a904339-1b37-459f-ba9f-7c43b3d91025)
+
+![delete-medical](https://github.com/user-attachments/assets/0803c315-781b-425f-ba6c-d8cf1fee6319)
+
+![deleted-medical](https://github.com/user-attachments/assets/e08d5698-159c-4658-8ea6-2694a744c42b)
 
 
 ## 5.7 Doctor Management Page
