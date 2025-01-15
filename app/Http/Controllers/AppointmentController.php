@@ -39,7 +39,7 @@ public function store(Request $request)
 
 public function edit(Appointment $appointment)
 {
-    return view('appointments.edit', compact('appointments'));
+    return view('edit-appointment', compact('appointments'));
 }
 
 public function update(Request $request, Appointment $appointment)
@@ -53,13 +53,13 @@ public function update(Request $request, Appointment $appointment)
             ]);
 
         $appointment->update($validated);
-        return redirect()->route('add-appointment')->with('success', 'Appointment updated successfully.');
+        return redirect()->route('appointments.index')->with('success', 'Appointment updated successfully.');
     }
 
     // Remove the specified appointment from the database
     public function destroy(Appointment $appointment)
     {
         $appointment->delete();
-        return redirect()->route('add-appointment')->with('success', 'Appointment deleted successfully.');
+        return redirect()->route('appointments.index')->with('success', 'Appointment deleted successfully.');
     }
 }
