@@ -53,8 +53,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 text-right">
-        <button type="submit" class="btn btn-primary">Save</button>
+    <div class="col-md-12 text-right m-3">
+        <a class="btn" href="{{ route('appointments.create') }}" role="button">Add Appointment</a>
+
     <!-- Team End -->
     </main>
 
